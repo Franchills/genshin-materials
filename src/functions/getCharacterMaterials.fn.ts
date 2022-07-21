@@ -13,23 +13,40 @@ export default function (
 	}
 ): Promise<MaterialsType> {
 	return new Promise(async (resolve, reject) => {
-		console.clear()
-
 		let materials: MaterialsType = {}
 
-		let ascensionMaterials: MaterialsType = mergeAscensionMaterials(character, phasesRequired)
-		let talentsNormalAttackMaterial = mergeTalentsMaterials(character, talentsRequired.normalAttack)
-		let talentsSkillMaterial = mergeTalentsMaterials(character, talentsRequired.skill)
-		let talentsBurstMaterial = mergeTalentsMaterials(character, talentsRequired.burst)
+		let allMaterials = [
+			mergeAscensionMaterials(character, phasesRequired),
+			mergeTalentsMaterials(character, talentsRequired.normalAttack),
+			mergeTalentsMaterials(character, talentsRequired.skill),
+			mergeTalentsMaterials(character, talentsRequired.burst)
+		]
 
-		materials=ascensionMaterials
+		allMaterials.forEach(materialGroup => {
+			for (let materialType in materialGroup) {
+				let materialData = materials[materialType]?.data
+				let talentMaterialData = materialGroup[materialType]?.data
 
-		for (let materialType in talentsNormalAttackMaterial) {
+				if (materialData === undefined) {
+					materials[materialType] = {
+						name: materialGroup[materialType].name,
+						data: materialGroup[materialType].data
+					}
+				} else {
+					talentMaterialData.forEach(talentMaterial => {
+						let materialFound = materialData.find(mat => mat.lvl === talentMaterial.lvl)
 
-			console.log(materialType,talentsNormalAttackMaterial[materialType])
-			console.log(materialType,materials[materialType])
+						if (materialFound === undefined) {
+							materials[materialType].data.push(talentMaterial)
+						} else {
+							materialFound.qt += talentMaterial.qt
+						}
+					})
+				}
+			}
+		})
 
-		}
+		console.log(materials)
 
 		resolve(materials)
 	})
