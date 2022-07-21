@@ -1,3 +1,5 @@
+import materialsData from '../assets/data/materials.json'
+
 export function saveDataToLs(materialData, newAmount) {
 	let lsData = JSON.parse(localStorage.getItem('ressources') || '{}')
 
@@ -27,36 +29,24 @@ function getBlankArray(materialType: string) {
 }
 
 export function getAllDataFromLs() {
-	return new Promise(async (resolve, reject) => {
-		let lsData = JSON.parse(localStorage.getItem('ressources') || '{}')
-		let updatedList = await getDefaultList()
+	let lsData = JSON.parse(localStorage.getItem('ressources') || '{}')
+	let updatedList = getDefaultList()
 
-		for (let key in updatedList) {
-			if (lsData[key] === undefined) {
-				lsData[key] = updatedList[key]
-			}
-
-			updatedList[key].forEach(item => {
-				if (lsData[key].find(lsItem => lsItem.name === item.name) === undefined) {
-					lsData[key].push(item)
-				}
-			})
+	for (let key in updatedList) {
+		if (lsData[key] === undefined) {
+			lsData[key] = updatedList[key]
 		}
 
+		updatedList[key].forEach(item => {
+			if (lsData[key].find(lsItem => lsItem.name === item.name) === undefined) {
+				lsData[key].push(item)
+			}
+		})
+	}
 
-		resolve(lsData)
-	})
+	return lsData
 }
 
-function getDefaultList(): Promise<any> {
-	return new Promise((resolve, reject) => {
-		fetch('https://raw.githubusercontent.com/Franchills/genshin-db/main/materials.json')
-			.then(res => res.json())
-			.then(data => {
-				resolve(data)
-			})
-			.catch(err => {
-				console.log(err)
-			})
-	})
+function getDefaultList() {
+	return materialsData
 }

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "kaedeharaKazuha",
+    "name": "Kazuha",
+    "ascensionMaterials": {
+      "gem": "anemoGem",
+      "natural": "seaGanoderma",
+      "mob": "treasureHoarderInsignia",
+      "boss": "marionetteCore"
+    },
+    "talentMaterials": {
+      "talentBook": "talentDilligence",
+      "mob": "treasureHoarderInsignia",
+      "bigBoss": "gildedScale"
+    }
+  },
+  {
+    "id": "huTao",
+    "name": "Hu Tao",
+    "ascensionMaterials": {
+      "gem": "pyroGem",
+      "natural": "silkFlower",
+      "mob": "whopperflowerNectar",
+      "boss": "juvenileJade"
+    },
+    "talentMaterials": {
+      "talentBook": "talentDilligence",
+      "mob": "whopperflowerNectar",
+      "bigBoss": "shardOfAFoulLegacy"
+    }
+  }
+]

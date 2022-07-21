@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte'
-	import fetchCharactersFn from './functions/fetchCharacters.fn'
+	import charaterData from './assets/data/characters.json'
 	import Characters from './layout/Characters.svelte'
 	import Ressources from './layout/Ressources.svelte'
 	import Tabs from './layout/Tabs.svelte'
@@ -8,12 +8,10 @@
 
 	console.clear()
 
-	let layoutToShow = 'ressources'
+	let layoutToShow = 'characters'
 
 	onMount(() => {
-		fetchCharactersFn().then(data => {
-			$charactersStore = data
-		})
+		$charactersStore = charaterData
 	})
 </script>
 

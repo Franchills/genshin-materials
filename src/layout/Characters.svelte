@@ -7,7 +7,7 @@
 	let selectedCharacters = [
 		{
 			id: 'kaedeharaKazuha',
-			phase: [4, 5, 6],
+			phase: [3, 6],
 			talents: {
 				normalAttack: [1, 6],
 				skill: [4, 7],
@@ -20,7 +20,7 @@
 		if (selectBindValue !== '') {
 			selectedCharacters.push({
 				id: selectBindValue,
-				phase: [1, 2, 3, 4, 5, 6],
+				phase: [1, 6],
 				talents: {
 					normalAttack: [1, 10],
 					skill: [1, 10],

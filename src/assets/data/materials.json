@@ -1,0 +1,663 @@
+{
+  "crown": [
+    {
+      "name": "crownOfInsight",
+      "amount": [
+        0
+      ]
+    }
+  ],
+  "mob": [
+    {
+      "name": "arrow",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "boneShard",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "chaosDevice",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "chaosGear",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "concealedClaw",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "fatuiInsignia",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "handguard",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "horn",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "leyLine",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "mask",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "mistGrass",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "nectar",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "prism",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "ravenInsignia",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "sacrificialKnife",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "scroll",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "slime",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "specter",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "statuette",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "boss": [
+    {
+      "name": "basaltPillar",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "cleansingHeart",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "crystallineBloom",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "dewOfRepudiation",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "dragonheirsFalseFin",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "everflameSeed",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "hoarfrostCore",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "hurricaneSeed",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "juvenileJade",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "lightningPrism",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "marionetteCore",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "perpetualHeart",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "riftbornRegalia",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "runicFang",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "smolderingPearl",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "stormBeads",
+      "amount": [
+        0
+      ]
+    }
+  ],
+  "bigBoss": [
+    {
+      "name": "ashenHeart",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "bloodjadeBranch",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "dragonLordsCrown",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "dvalinsClaw",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "dvalinsPlume",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "dvalinsSigh",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "gildedScale",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "hellfireButterfly",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "moltenMoment",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "mudraOfTheMaleficGeneral",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "ringOfBoreas",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "shadowOfTheWarrior",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "shardOfAFoulLegacy",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "spiritLocketOfBoreas",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "tailOfBoreas",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "tearsOfTheCalamitousGod",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "theMeaningOfAeons",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "tuskOfMonocerosCaeli",
+      "amount": [
+        0
+      ]
+    }
+  ],
+  "gem": [
+    {
+      "name": "anemoGem",
+      "amount": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "cryoGem",
+      "amount": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "diamondGem",
+      "amount": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "electroGem",
+      "amount": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "geoGem",
+      "amount": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "hydroGem",
+      "amount": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pyroGem",
+      "amount": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "natural": [
+    {
+      "name": "amakumoFruit",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "callaLily",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "cecilia",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "corLapis",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "crystalMarrow",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "dandelionSeed",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "dendrobium",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "fluorescentFungus",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "glazeLily",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "jueyunChili",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "nakuWeed",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "noctilucousJade",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "onikabuto",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "philanemoMushroom",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "qingxin",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "sakuraBloom",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "sangoPearl",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "seaGanoderma",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "silkFlower",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "smallLampGrass",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "starconch",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "valberry",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "violetgrass",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "windwheelAster",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "wolfhook",
+      "amount": [
+        0
+      ]
+    }
+  ],
+  "talentBook": [
+    {
+      "name": "ballad",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "diligence",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "elegance",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "freedom",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "gold",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "light",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "prosperity",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "resistance",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "transience",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

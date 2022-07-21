@@ -91,10 +91,11 @@ function mergeTalentsMaterials(character, talentsRequiredValue) {
 }
 
 function mergeAscensionMaterials(character, phasesRequired) {
-	let phases = phasesRequired.map(phase => ascension.find(asc => asc.phaseNumber === phase))
 	let materials: MaterialsType = {}
 
-	phases.forEach(phase => {
+	for (let i = phasesRequired[0] + 1; i <= phasesRequired[1]; i++) {
+		let phase = ascension.find(asc => asc.phaseNumber === i)
+
 		for (let materialType in phase.materials) {
 			let phaseMaterial = phase.materials[materialType]
 			let characterMaterial = character.ascensionMaterials[materialType]
@@ -124,7 +125,7 @@ function mergeAscensionMaterials(character, phasesRequired) {
 				}
 			}
 		}
-	})
+	}
 
 	return materials
 }
