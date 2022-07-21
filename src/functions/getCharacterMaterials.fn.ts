@@ -7,9 +7,9 @@ export default function (
 	character: CharacterType,
 	phasesRequired: number[],
 	talentsRequired: {
-		normalAttack: number
-		skill: number
-		burst: number
+		normalAttack: number[]
+		skill: number[]
+		burst: number[]
 	}
 ): Promise<MaterialsType> {
 	return new Promise(async (resolve, reject) => {
@@ -46,8 +46,6 @@ export default function (
 			}
 		})
 
-		console.log(materials)
-
 		resolve(materials)
 	})
 }
@@ -55,7 +53,7 @@ export default function (
 function mergeTalentsMaterials(character, talentsRequiredValue) {
 	let materials: MaterialsType = {}
 
-	for (let i = 1; i <= talentsRequiredValue; i++) {
+	for (let i = talentsRequiredValue[0] + 1; i <= talentsRequiredValue[1]; i++) {
 		let talent = talents.find(tal => tal.lvl === i)
 
 		for (let talentType in talent?.materials) {

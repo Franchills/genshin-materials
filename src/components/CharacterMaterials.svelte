@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte'
-	import getCharacterDataFn from '../functions/getCharacterData.fn'
 	import getCharacterMaterialsFn from '../functions/getCharacterMaterials.fn'
+	import { charactersStore } from '../stores/store'
 	import CharacterImage from './CharacterImage.svelte'
 
 	export let character
@@ -12,9 +12,9 @@
 	let materialBoss
 
 	onMount(async () => {
-		getCharacterDataFn(character.id).then(async data => {
-			let materials = await getCharacterMaterialsFn(data, character.phase, character.talents)
-		})
+		let characterStore = $charactersStore.find(char => char.id === character.id)
+
+		let materials = await getCharacterMaterialsFn(characterStore, character.phase, character.talents)
 	})
 </script>
 
