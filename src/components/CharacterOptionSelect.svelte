@@ -13,15 +13,6 @@
 	let isMounting = true
 
 	let values = []
-	/*
-    Lvl 1 - 20 Phase 0
-    Lvl 21 - 40 Phase 1
-    Lvl 41 - 50 Phase 2
-    Lvl 51 - 60 Phase 3
-    Lvl 61 - 70 Phase 4
-    Lvl 71 - 80 Phase 5
-    Lvl 81 - 90 Phase 6
-  */
 
 	$: {
 		currentValue

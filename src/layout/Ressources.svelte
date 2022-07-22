@@ -1,5 +1,5 @@
 <script>
-	import { getAllDataFromLs } from '../services/localStorage.service'
+	import { getAllDataFromLs } from '../services/materialStorage.service'
 
 	import MaterialGrid from '../components/MaterialGrid.svelte'
 

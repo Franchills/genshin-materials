@@ -21,7 +21,7 @@ export function saveDataToLs(materialData, newAmount) {
 function getBlankArray(materialType: string) {
 	if (materialType === 'mob') {
 		return [0, 0, 0]
-	} else if (['boss', 'bigBoss', 'crown'].includes(materialType)) {
+	} else if (['boss', 'bigBoss', 'crown','natural'].includes(materialType)) {
 		return [0]
 	} else if (['weapon', 'gem'].includes(materialType)) {
 		return [0, 0, 0, 0]

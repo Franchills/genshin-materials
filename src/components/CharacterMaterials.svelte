@@ -1,65 +1,108 @@
 <script lang="ts">
 	import { onMount } from 'svelte'
 	import getCharacterMaterialsFn from '../functions/getCharacterMaterials.fn'
+	import { getAllCharactersFromStorage, saveAllCharactersToStorage } from '../services/characterStorage.service'
+	import { getAllDataFromLs } from '../services/materialStorage.service'
 	import { charactersStore } from '../stores/store'
 	import CharacterImage from './CharacterImage.svelte'
 	import CharacterOptionSelect from './CharacterOptionSelect.svelte'
 
+	// console.clear()
+
 	export let character
-	let materials = []
-	let materialGem
-	let materialNatural
-	let materialMob
-	let materialBoss
+	let materialData = getAllDataFromLs()
+	let materialsDisplay = []
 
 	$: {
-		console.log(character)
+		character
 		loadMaterials()
 	}
 
 	function updateValue({ detail }) {
-		if (detail.selectType === 'phase') {
-			let currentPhaseValue = getProperPhaseValue(detail.value[0])
-			let requiredPhaseValue = getProperPhaseValue(detail.value[1])
-
-			console.log(currentPhaseValue, requiredPhaseValue)
-
-			character[detail.selectType] = [currentPhaseValue, requiredPhaseValue]
+		if (detail.selectType === 'level') {
+			character[detail.selectType] = detail.value
 		} else {
 			character[detail.selectType][detail.selectId] = detail.value
 		}
-	}
 
-	function getProperPhaseValue(value) {
-		if (value <= 20) {
-			return 0
-		}
+		let characters = getAllCharactersFromStorage()
 
-		if (value <= 40) {
-			return 1
-		}
+		characters[characters.findIndex(char => char.id === character.id)] = character
 
-		if (value <= 50) {
-			return 2
-		}
+		saveAllCharactersToStorage(characters)
 	}
 
 	async function loadMaterials() {
 		let characterStore = $charactersStore.find(char => char.id === character.id)
-		// let materials = await getCharacterMaterialsFn(characterStore, character.phase, character.talents)
+		let materials = await getCharacterMaterialsFn(characterStore, character.level, character.talents)
 
-		console.log(materials)
+		console.clear()
+
+		console.log(`------ ${character.id} ------`)
+
+		materialsDisplay = []
+
+		for (let materialType in materials) {
+			materialsDisplay.push({
+				type: materialType,
+				name: materials[materialType].name,
+				data: {
+					inventory: materialData[materialType]
+						.find(material => material.name === materials[materialType].name)
+						?.amount.map((material, index) => {
+							return {
+								lvl: ['natural', 'crown', 'boss', 'bigBoss'].includes(materialType) ? undefined : index,
+								qt: material
+							}
+						}),
+					required: materials[materialType].data,
+					totals: []
+				}
+			})
+		}
+
+		/*
+			[
+				{
+					lvl:0,
+					qt:0
+				}
+			]
+		*/
+
+		// console.dir(materialsDisplay)
+
+		for (let material of materialsDisplay) {
+			console.log(`--------- ${material.name} ---------`)
+			let inventoryMaterials = material.data.inventory
+			let requiredMaterials = material.data.required
+			let totals = []
+
+			requiredMaterials.forEach((requiredMaterial, index) => {
+				console.log(inventoryMaterials[index].qt, requiredMaterials[index].qt)
+				let value = Math.trunc(
+					inventoryMaterials[index].qt - requiredMaterials[index].qt + (totals[index - 1] || 0) / (index * 3 || 1)
+				)
+
+				if (!(value >= 0)) {
+					value = 0
+				}
+
+				totals.push(value)
+
+				console.log(value)
+			})
+
+			// console.dir(inventoryMaterials)
+			// console.dir(requiredMaterials)
+		}
 	}
 
 	onMount(async () => {})
 </script>
 
 <character-materials>
-	<character-image>
-		<CharacterImage characterId={character.id} />
-	</character-image>
-
-	<grid-header>
+	<character-header>
 		<CharacterOptionSelect
 			on:updateValue={updateValue}
 			selectTitle="Normal Attack"
@@ -90,17 +133,45 @@
 		<CharacterOptionSelect
 			on:updateValue={updateValue}
 			selectTitle="Ascension"
-			selectType="phase"
+			selectType="level"
 			selectId={undefined}
-			currentValue={character.phase[0]}
-			requiredValue={character.phase[1]}
+			currentValue={character.level[0]}
+			requiredValue={character.level[1]}
 			minMaxValue={[1, 90]}
 		/>
-	</grid-header>
+	</character-header>
+
+	<character-body>
+		<character-image>
+			<CharacterImage characterId={character.id} />
+		</character-image>
+		<character-materials-table />
+	</character-body>
 </character-materials>
 
 <style>
 	character-materials {
-		display: grid;
+		display: flex;
+		flex-direction: column;
+	}
+
+	character-header {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	character-body {
+		display: flex;
+		flex-direction: row;
+	}
+
+	table {
+		height: max-content;
+		width: 100%;
+		text-align: center;
+	}
+
+	table td {
+		border: 1px solid #ccc;
 	}
 </style>

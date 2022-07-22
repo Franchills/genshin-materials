@@ -1,34 +1,31 @@
 <script lang="ts">
+	import { onMount } from 'svelte'
 	import CharacterMaterials from '../components/CharacterMaterials.svelte'
+	import { getAllCharactersFromStorage, saveAllCharactersToStorage } from '../services/characterStorage.service'
 	import { charactersStore } from '../stores/store'
 
 	let selectBindValue = ''
 
-	let selectedCharacters = [
-		{
-			id: 'kaedeharaKazuha',
-			phase: [3, 6],
-			talents: {
-				normalAttack: [1, 6],
-				skill: [4, 7],
-				burst: [2, 4]
-			}
-		}
-	]
+	let characters = []
+
+	onMount(() => {
+		characters = getAllCharactersFromStorage()
+	})
 
 	function addCharacter() {
 		if (selectBindValue !== '') {
-			selectedCharacters.push({
+			characters.push({
 				id: selectBindValue,
-				phase: [1, 6],
+				level: [1, 90],
 				talents: {
 					normalAttack: [1, 10],
 					skill: [1, 10],
 					burst: [1, 10]
 				}
 			})
-			selectedCharacters = selectedCharacters
+			characters = characters
 			selectBindValue = ''
+			saveAllCharactersToStorage(characters)
 		}
 	}
 </script>
@@ -36,9 +33,7 @@
 <characters-svelte>
 	<select bind:value={selectBindValue}>
 		{#each $charactersStore as character, index (index)}
-			<option
-				value={character.id}
-				disabled={selectedCharacters.find(char => char.id === character.id) === undefined ? false : true}
+			<option value={character.id} disabled={characters.find(char => char.id === character.id) === undefined ? false : true}
 				>{character.name}</option
 			>
 		{/each}
@@ -48,7 +43,7 @@
 
 	<br />
 
-	{#each selectedCharacters as character, index (index)}
+	{#each characters as character, index (index)}
 		<CharacterMaterials {character} />
 	{/each}
 </characters-svelte>

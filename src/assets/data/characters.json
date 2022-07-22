@@ -5,13 +5,14 @@
     "ascensionMaterials": {
       "gem": "anemoGem",
       "natural": "seaGanoderma",
-      "mob": "treasureHoarderInsignia",
+      "mob": "ravenInsignia",
       "boss": "marionetteCore"
     },
     "talentMaterials": {
-      "talentBook": "talentDilligence",
-      "mob": "treasureHoarderInsignia",
-      "bigBoss": "gildedScale"
+      "talentBook": "diligence",
+      "mob": "ravenInsignia",
+      "bigBoss": "gildedScale",
+      "crown": "crownOfInsight"
     }
   },
   {
@@ -24,9 +25,10 @@
       "boss": "juvenileJade"
     },
     "talentMaterials": {
-      "talentBook": "talentDilligence",
+      "talentBook": "diligence",
       "mob": "whopperflowerNectar",
-      "bigBoss": "shardOfAFoulLegacy"
+      "bigBoss": "shardOfAFoulLegacy",
+      "crown": "crownOfInsight"
     }
   }
 ]

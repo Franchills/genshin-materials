@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { saveDataToLs } from '../services/localStorage.service'
+	import { saveDataToLs } from '../services/materialStorage.service'
 	import MaterialImage from './MaterialImage.svelte'
 
 	export let materialData
@@ -23,6 +23,8 @@
 		} else if (shift === 'down' && materialData.amount - 1 >= 0) {
 			materialData.amount = materialData.amount - 1
 		}
+
+		saveAmount(materialData.amount)
 	}
 </script>
 

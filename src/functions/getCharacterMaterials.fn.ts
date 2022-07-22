@@ -5,7 +5,7 @@ import type { MaterialsType } from '../types/materials.type'
 
 export default function (
 	character: CharacterType,
-	phasesRequired: number[],
+	levelsRequired: number[],
 	talentsRequired: {
 		normalAttack: number[]
 		skill: number[]
@@ -15,8 +15,10 @@ export default function (
 	return new Promise(async (resolve, reject) => {
 		let materials: MaterialsType = {}
 
+		levelsRequired = [getPhaseValueFromLevel(levelsRequired[0]), getPhaseValueFromLevel(levelsRequired[1])]
+
 		let allMaterials = [
-			mergeAscensionMaterials(character, phasesRequired),
+			mergeAscensionMaterials(character, levelsRequired),
 			mergeTalentsMaterials(character, talentsRequired.normalAttack),
 			mergeTalentsMaterials(character, talentsRequired.skill),
 			mergeTalentsMaterials(character, talentsRequired.burst)
@@ -48,6 +50,24 @@ export default function (
 
 		resolve(materials)
 	})
+}
+
+function getPhaseValueFromLevel(value) {
+	if (value <= 20) {
+		return 0
+	} else if (value <= 40) {
+		return 1
+	} else if (value <= 50) {
+		return 2
+	} else if (value <= 60) {
+		return 3
+	} else if (value <= 70) {
+		return 4
+	} else if (value <= 80) {
+		return 5
+	} else if (value <= 90) {
+		return 6
+	}
 }
 
 function mergeTalentsMaterials(character, talentsRequiredValue) {
@@ -90,14 +110,14 @@ function mergeTalentsMaterials(character, talentsRequiredValue) {
 	return materials
 }
 
-function mergeAscensionMaterials(character, phasesRequired) {
+function mergeAscensionMaterials(character, levelsRequired) {
 	let materials: MaterialsType = {}
 
-	for (let i = phasesRequired[0] + 1; i <= phasesRequired[1]; i++) {
-		let phase = ascension.find(asc => asc.phaseNumber === i)
+	for (let i = levelsRequired[0] + 1; i <= levelsRequired[1]; i++) {
+		let level = ascension.find(asc => asc.phaseNumber === i)
 
-		for (let materialType in phase.materials) {
-			let phaseMaterial = phase.materials[materialType]
+		for (let materialType in level?.materials) {
+			let levelMaterial = level.materials[materialType]
 			let characterMaterial = character.ascensionMaterials[materialType]
 
 			let material = materials[materialType]
@@ -107,21 +127,21 @@ function mergeAscensionMaterials(character, phasesRequired) {
 					name: characterMaterial,
 					data: [
 						{
-							lvl: phaseMaterial.lvl,
-							qt: phaseMaterial.qt
+							lvl: levelMaterial.lvl,
+							qt: levelMaterial.qt
 						}
 					]
 				}
 			} else {
-				let materialFound = material.data.find(mat => mat.lvl === phaseMaterial.lvl)
+				let materialFound = material.data.find(mat => mat.lvl === levelMaterial.lvl)
 
 				if (materialFound === undefined) {
 					material.data.push({
-						lvl: phaseMaterial.lvl,
-						qt: phaseMaterial.qt
+						lvl: levelMaterial.lvl,
+						qt: levelMaterial.qt
 					})
 				} else {
-					materialFound.qt += phaseMaterial.qt
+					materialFound.qt += levelMaterial.qt
 				}
 			}
 		}
