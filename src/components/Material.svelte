@@ -9,11 +9,14 @@
 	}
 
 	function showManualInput() {
-		let result = Number(prompt('Enter amount:'))
+		let result = prompt('Enter amount:',materialData.amount)
 
-		if (!isNaN(result)) {
-			saveAmount(result)
-			materialData.amount = result
+		if (result !== null) {
+			let value = Number(result)
+			if (!isNaN(value)) {
+				saveAmount(value)
+				materialData.amount = value
+			}
 		}
 	}
 
