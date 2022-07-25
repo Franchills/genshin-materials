@@ -79,23 +79,20 @@
 			let totals = []
 
 			requiredMaterials.forEach((requiredMaterial, index) => {
-				console.log(inventoryMaterials[index].qt, requiredMaterials[index].qt)
-				let value = Math.trunc(
-					inventoryMaterials[index].qt - requiredMaterials[index].qt + (totals[index - 1] || 0) / (index * 3 || 1)
-				)
-
-				if (!(value >= 0)) {
-					value = 0
-				}
+				let value = inventoryMaterials[index].qt - requiredMaterials[index].qt + (totals[index - 1] || 0) / 3
 
 				totals.push(value)
 
-				console.log(value)
+				material.data.totals.push({
+					lvl: index,
+					qt: value
+				})
 			})
-
-			// console.dir(inventoryMaterials)
-			// console.dir(requiredMaterials)
 		}
+
+		console.dir(materialsDisplay.find(material => material.type === 'mob').data.inventory)
+		console.dir(materialsDisplay.find(material => material.type === 'mob').data.required)
+		console.dir(materialsDisplay.find(material => material.type === 'mob').data.totals)
 	}
 
 	onMount(async () => {})
