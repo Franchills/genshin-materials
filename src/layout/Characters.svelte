@@ -41,10 +41,12 @@
 <characters-svelte>
 	<character-select>
 		<select bind:value={selectBindValue}>
-			{#each $charactersStore.slice(35) as character, index (index)}
-				<option value={character.id} disabled={characters.find(char => char.id === character.id) === undefined ? false : true}
-					>{character.name}</option
-				>
+			{#each $charactersStore as character, index (index)}
+				{#if characters.find(char => char.id === character.id) === undefined}
+					<option value={character.id} disabled={characters.find(char => char.id === character.id) === undefined ? false : true}
+						>{character.name}</option
+					>
+				{/if}
 			{/each}
 		</select>
 

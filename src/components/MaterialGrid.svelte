@@ -6,7 +6,7 @@
 	export let materialType
 </script>
 
-<h1>{gridName}</h1>
+<grid-name>{gridName}</grid-name>
 <mob-materials class="grid">
 	{#each materialData as material, index (index)}
 		{#each material.amount as mobMaterialAmount, index (index)}
@@ -20,5 +20,14 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(80px, 80px));
 		gap: 0.25rem;
+	}
+
+	grid-name {
+		font-size: 2rem;
+		font-weight: bold;
+		margin: 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 </style>

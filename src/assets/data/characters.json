@@ -632,20 +632,49 @@
       "mob": "mask"
     },
     "talentMaterials": {
-      "talentBook": "diligence",
-      "mob": "whopperflowerNectar",
-      "bigBoss": "shardOfAFoulLegacy",
+      "talentBook": "ballad",
+      "mob": "scroll",
+      "bigBoss": "dvalinsSigh",
       "crown": "crownOfInsight"
     }
   },
   {
-    "id": "huTao",
-    "name": "",
+    "id": "travelerGeo",
+    "name": "Traveler Geo",
     "ascensionMaterials": {
-      "gem": "pyroGem",
-      "natural": "silkFlower",
-      "mob": "whopperflowerNectar",
-      "boss": "juvenileJade"
+      "gem": "diamondGem",
+      "natural": "windwheelAster",
+      "mob": "mask"
+    },
+    "talentMaterials": {
+      "talentBook": "prosperity",
+      "mob": "arrow",
+      "bigBoss": "tailOfBoreas",
+      "crown": "crownOfInsight"
+    }
+  },
+  {
+    "id": "travelerElectro",
+    "name": "Traveler Electro",
+    "ascensionMaterials": {
+      "gem": "diamondGem",
+      "natural": "windwheelAster",
+      "mob": "mask"
+    },
+    "talentMaterials": {
+      "talentBook": "transience",
+      "mob": "handguard",
+      "bigBoss": "dragonLordsCrown",
+      "crown": "crownOfInsight"
+    }
+  },
+  {
+    "id": "travelerDendro",
+    "name": "Traveler Dendro",
+    "ascensionMaterials": {
+      "gem": "diamondGem",
+      "natural": "windwheelAster",
+      "mob": "mask"
     },
     "talentMaterials": {
       "talentBook": "diligence",
@@ -655,162 +684,178 @@
     }
   },
   {
-    "id": "huTao",
-    "name": "",
+    "id": "venti",
+    "name": "Venti",
     "ascensionMaterials": {
-      "gem": "pyroGem",
-      "natural": "silkFlower",
-      "mob": "whopperflowerNectar",
-      "boss": "juvenileJade"
+      "gem": "anemoGem",
+      "natural": "cecilia",
+      "mob": "slime",
+      "boss": "hurricaneSeed"
     },
     "talentMaterials": {
-      "talentBook": "diligence",
-      "mob": "whopperflowerNectar",
-      "bigBoss": "shardOfAFoulLegacy",
+      "talentBook": "ballad",
+      "mob": "slime",
+      "bigBoss": "tailOfBoreas",
       "crown": "crownOfInsight"
     }
   },
   {
-    "id": "huTao",
-    "name": "",
+    "id": "xiangling",
+    "name": "Xiangling",
     "ascensionMaterials": {
       "gem": "pyroGem",
-      "natural": "silkFlower",
-      "mob": "whopperflowerNectar",
-      "boss": "juvenileJade"
+      "natural": "jueyunChili",
+      "mob": "slime",
+      "boss": "everflameSeed"
     },
     "talentMaterials": {
       "talentBook": "diligence",
-      "mob": "whopperflowerNectar",
-      "bigBoss": "shardOfAFoulLegacy",
+      "mob": "slime",
+      "bigBoss": "dvalinsClaw",
       "crown": "crownOfInsight"
     }
   },
   {
-    "id": "huTao",
-    "name": "",
+    "id": "xiao",
+    "name": "Xiao",
     "ascensionMaterials": {
-      "gem": "pyroGem",
-      "natural": "silkFlower",
-      "mob": "whopperflowerNectar",
+      "gem": "anemoGem",
+      "natural": "qingxin",
+      "mob": "slime",
       "boss": "juvenileJade"
     },
     "talentMaterials": {
-      "talentBook": "diligence",
-      "mob": "whopperflowerNectar",
-      "bigBoss": "shardOfAFoulLegacy",
+      "talentBook": "prosperity",
+      "mob": "slime",
+      "bigBoss": "shadowOfTheWarrior",
       "crown": "crownOfInsight"
     }
   },
   {
-    "id": "huTao",
-    "name": "",
+    "id": "xingqiu",
+    "name": "Xingqiu",
     "ascensionMaterials": {
-      "gem": "pyroGem",
+      "gem": "hydroGem",
       "natural": "silkFlower",
-      "mob": "whopperflowerNectar",
-      "boss": "juvenileJade"
+      "mob": "mask",
+      "boss": "cleansingHeart"
     },
     "talentMaterials": {
-      "talentBook": "diligence",
-      "mob": "whopperflowerNectar",
-      "bigBoss": "shardOfAFoulLegacy",
+      "talentBook": "gold",
+      "mob": "mask",
+      "bigBoss": "tailOfBoreas",
       "crown": "crownOfInsight"
     }
   },
   {
-    "id": "huTao",
-    "name": "",
+    "id": "xinyan",
+    "name": "Xinyan",
     "ascensionMaterials": {
       "gem": "pyroGem",
-      "natural": "silkFlower",
-      "mob": "whopperflowerNectar",
-      "boss": "juvenileJade"
+      "natural": "violetgrass",
+      "mob": "ravenInsignia",
+      "boss": "everflameSeed"
     },
     "talentMaterials": {
-      "talentBook": "diligence",
-      "mob": "whopperflowerNectar",
-      "bigBoss": "shardOfAFoulLegacy",
+      "talentBook": "gold",
+      "mob": "ravenInsignia",
+      "bigBoss": "tuskOfMonocerosCaeli",
       "crown": "crownOfInsight"
     }
   },
   {
-    "id": "huTao",
-    "name": "",
+    "id": "yaeMiko",
+    "name": "Yae Miko",
     "ascensionMaterials": {
-      "gem": "pyroGem",
-      "natural": "silkFlower",
-      "mob": "whopperflowerNectar",
-      "boss": "juvenileJade"
+      "gem": "electroGem",
+      "natural": "seaGanoderma",
+      "mob": "handguard",
+      "boss": "dragonheirsFalseFin"
     },
     "talentMaterials": {
-      "talentBook": "diligence",
-      "mob": "whopperflowerNectar",
-      "bigBoss": "shardOfAFoulLegacy",
+      "talentBook": "light",
+      "mob": "handguard",
+      "bigBoss": "theMeaningOfAeons",
       "crown": "crownOfInsight"
     }
   },
   {
-    "id": "huTao",
-    "name": "",
+    "id": "yanfei",
+    "name": "Yanfei",
     "ascensionMaterials": {
       "gem": "pyroGem",
-      "natural": "silkFlower",
-      "mob": "whopperflowerNectar",
+      "natural": "noctilucousJade",
+      "mob": "ravenInsignia",
       "boss": "juvenileJade"
     },
     "talentMaterials": {
-      "talentBook": "diligence",
-      "mob": "whopperflowerNectar",
-      "bigBoss": "shardOfAFoulLegacy",
+      "talentBook": "gold",
+      "mob": "ravenInsignia",
+      "bigBoss": "bloodjadeBranch",
       "crown": "crownOfInsight"
     }
   },
   {
-    "id": "huTao",
-    "name": "",
+    "id": "yelan",
+    "name": "Yelan",
     "ascensionMaterials": {
-      "gem": "pyroGem",
-      "natural": "silkFlower",
-      "mob": "whopperflowerNectar",
-      "boss": "juvenileJade"
+      "gem": "hydroGem",
+      "natural": "starconch",
+      "mob": "fatuiInsignia",
+      "boss": "runicFang"
     },
     "talentMaterials": {
-      "talentBook": "diligence",
-      "mob": "whopperflowerNectar",
-      "bigBoss": "shardOfAFoulLegacy",
+      "talentBook": "prosperity",
+      "mob": "fatuiInsignia",
+      "bigBoss": "gildedScale",
       "crown": "crownOfInsight"
     }
   },
   {
-    "id": "huTao",
-    "name": "",
+    "id": "yoimiya",
+    "name": "Yoimiya",
     "ascensionMaterials": {
       "gem": "pyroGem",
-      "natural": "silkFlower",
-      "mob": "whopperflowerNectar",
-      "boss": "juvenileJade"
+      "natural": "nakuWeed",
+      "mob": "scroll",
+      "boss": "smolderingPearl"
     },
     "talentMaterials": {
-      "talentBook": "diligence",
-      "mob": "whopperflowerNectar",
-      "bigBoss": "shardOfAFoulLegacy",
+      "talentBook": "transience",
+      "mob": "scroll",
+      "bigBoss": "dragonLordsCrown",
       "crown": "crownOfInsight"
     }
   },
   {
-    "id": "huTao",
-    "name": "",
+    "id": "yunJin",
+    "name": "Yun Jin",
     "ascensionMaterials": {
-      "gem": "pyroGem",
-      "natural": "silkFlower",
-      "mob": "whopperflowerNectar",
-      "boss": "juvenileJade"
+      "gem": "geoGem",
+      "natural": "glazeLily",
+      "mob": "mask",
+      "boss": "riftbornRegalia"
     },
     "talentMaterials": {
       "talentBook": "diligence",
-      "mob": "whopperflowerNectar",
-      "bigBoss": "shardOfAFoulLegacy",
+      "mob": "mask",
+      "bigBoss": "ashenHeart",
+      "crown": "crownOfInsight"
+    }
+  },
+  {
+    "id": "zhongli",
+    "name": "Zhongli",
+    "ascensionMaterials": {
+      "gem": "geoGem",
+      "natural": "corLapis",
+      "mob": "slime",
+      "boss": "basaltPillar"
+    },
+    "talentMaterials": {
+      "talentBook": "gold",
+      "mob": "fatuiInsignia",
+      "bigBoss": "tuskOfMonocerosCaeli",
       "crown": "crownOfInsight"
     }
   }
