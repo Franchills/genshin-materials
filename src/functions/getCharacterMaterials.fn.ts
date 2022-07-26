@@ -80,10 +80,10 @@ function mergeTalentsMaterials(character, talentsRequiredValue) {
 			let talentMaterial = talent.materials[talentType]
 			let characterMaterial = character.talentMaterials[talentType]
 
-			let material = materials[talentType]
+			let material = materials[`${talentType}_${characterMaterial}`]
 
 			if (material === undefined) {
-				materials[talentType] = {
+				materials[`${talentType}_${characterMaterial}`] = {
 					name: characterMaterial,
 					data: [
 						{
@@ -120,10 +120,11 @@ function mergeAscensionMaterials(character, levelsRequired) {
 			let levelMaterial = level.materials[materialType]
 			let characterMaterial = character.ascensionMaterials[materialType]
 
-			let material = materials[materialType]
+			let material = materials[`${materialType}_${characterMaterial}`]
+			// let material = materials[materialType]
 
 			if (material === undefined) {
-				materials[materialType] = {
+				materials[`${materialType}_${characterMaterial}`] = {
 					name: characterMaterial,
 					data: [
 						{

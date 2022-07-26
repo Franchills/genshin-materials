@@ -32,8 +32,6 @@
 		saveAllCharactersToStorage(characters)
 	}
 
-	console.clear()
-
 	async function loadMaterials() {
 		let characterStore = $charactersStore.find(char => char.id === character.id)
 		let materials = await getCharacterMaterialsFn(characterStore, character.level, character.talents)
@@ -41,22 +39,24 @@
 		materialsDisplay = []
 
 		for (let materialType in materials) {
-			materialsDisplay.push({
-				type: materialType,
-				name: materials[materialType].name,
-				data: {
-					inventory: materialData[materialType]
-						.find(material => material.name === materials[materialType].name)
-						?.amount.map((material, index) => {
-							return {
-								lvl: ['natural', 'crown', 'boss', 'bigBoss'].includes(materialType) ? undefined : index,
-								qt: material
-							}
-						}),
-					required: materials[materialType].data,
-					totals: []
-				}
-			})
+			if (materialType.split('_')[1] !== 'undefined') {
+				materialsDisplay.push({
+					type: materialType,
+					name: materials[materialType].name,
+					data: {
+						inventory: materialData[materialType.split('_')[0]]
+							.find(material => material.name === materials[materialType].name)
+							?.amount.map((material, index) => {
+								return {
+									lvl: ['natural', 'crown', 'boss', 'bigBoss'].includes(materialType.split('_')[0]) ? undefined : index,
+									qt: material
+								}
+							}),
+						required: materials[materialType].data,
+						totals: []
+					}
+				})
+			}
 		}
 
 		for (let material of materialsDisplay) {
@@ -79,7 +79,7 @@
 		materialsDisplay = materialsDisplay.sort((a, b) => {
 			let weights = ['gem', 'mob', 'talentBook', 'boss', 'bigBoss', 'natural', 'crown']
 
-			return weights.indexOf(a.type) - weights.indexOf(b.type)
+			return weights.indexOf(a.type.split('_')[0]) - weights.indexOf(b.type.split('_')[0])
 		})
 	}
 
@@ -146,7 +146,9 @@
 						{#each materialType.data.inventory as material, index (index)}
 							<material>
 								<img
-									src="/images/materials/{materialType.type}/{materialType.name}{isNaN(material.lvl) ? '' : material.lvl}.webp"
+									src="/images/materials/{materialType.type.split('_')[0]}/{materialType.name}{isNaN(material.lvl)
+										? ''
+										: material.lvl}.webp"
 									alt=""
 								/>
 								{material.qt}</material
@@ -162,7 +164,9 @@
 						{#each materialType.data.required as material, index (index)}
 							<material>
 								<img
-									src="/images/materials/{materialType.type}/{materialType.name}{isNaN(material.lvl) ? '' : material.lvl}.webp"
+									src="/images/materials/{materialType.type.split('_')[0]}/{materialType.name}{isNaN(material.lvl)
+										? ''
+										: material.lvl}.webp"
 									alt=""
 								/>
 								{material.qt}</material
@@ -178,7 +182,9 @@
 						{#each materialType.data.totals as material, index (index)}
 							<material>
 								<img
-									src="/images/materials/{materialType.type}/{materialType.name}{isNaN(material.lvl) ? '' : material.lvl}.webp"
+									src="/images/materials/{materialType.type.split('_')[0]}/{materialType.name}{isNaN(material.lvl)
+										? ''
+										: material.lvl}.webp"
 									alt=""
 								/>
 								{material.qt}</material
