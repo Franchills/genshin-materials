@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { onMount } from 'svelte'
+	import { createEventDispatcher } from 'svelte'
 	import getCharacterMaterialsFn from '../functions/getCharacterMaterials.fn'
 	import { getAllCharactersFromStorage, saveAllCharactersToStorage } from '../services/characterStorage.service'
 	import { getAllDataFromLs } from '../services/materialStorage.service'
@@ -10,6 +10,8 @@
 	export let character
 	let materialData = getAllDataFromLs()
 	let materialsDisplay = []
+
+	let dispatch = createEventDispatcher()
 
 	$: {
 		character
@@ -29,6 +31,8 @@
 
 		saveAllCharactersToStorage(characters)
 	}
+
+	console.clear()
 
 	async function loadMaterials() {
 		let characterStore = $charactersStore.find(char => char.id === character.id)
@@ -60,34 +64,39 @@
 			let requiredMaterials = material.data.required
 			let totals = []
 
-			requiredMaterials.forEach((_, index) => {
+			requiredMaterials.forEach((requiredMaterial, index) => {
 				let qtDifference = inventoryMaterials[index].qt - requiredMaterials[index].qt + (totals[index - 1] || 0) / 3
 
 				totals.push(qtDifference >= 0 ? qtDifference : 0)
 
 				material.data.totals.push({
-					lvl: index,
+					lvl: requiredMaterial.lvl,
 					qt: Number(qtDifference.toFixed(2))
 				})
 			})
 		}
-
-		console.clear()
 
 		materialsDisplay = materialsDisplay.sort((a, b) => {
 			let weights = ['gem', 'mob', 'talentBook', 'boss', 'bigBoss', 'natural', 'crown']
 
 			return weights.indexOf(a.type) - weights.indexOf(b.type)
 		})
-
-		console.dir(materialsDisplay)
 	}
 
-	onMount(async () => {})
+	function removeCharacter() {
+		let result = confirm('Are you sure you want to remove this character?')
+
+		if (result === true) {
+			dispatch('removeCharacter', {
+				id: character.id
+			})
+		}
+	}
 </script>
 
 <character-materials>
 	<character-header>
+		<button on:click={() => removeCharacter()}>Delete</button>
 		<CharacterOptionSelect
 			on:updateValue={updateValue}
 			selectTitle="Normal Attack"
@@ -131,29 +140,82 @@
 			<CharacterImage characterId={character.id} />
 		</character-image>
 		<character-materials-table>
-
-			{#each materialsDisplay as materialType, index (index)}
-
-				{#each materialType.data.inventory as material, index (index)}
-					{material}
+			<inventory-materials class="grid">
+				{#each materialsDisplay as materialType, index (index)}
+					<grid-section>
+						{#each materialType.data.inventory as material, index (index)}
+							<material>
+								<img
+									src="/images/materials/{materialType.type}/{materialType.name}{isNaN(material.lvl) ? '' : material.lvl}.webp"
+									alt=""
+								/>
+								{material.qt}</material
+							>
+						{/each}
+					</grid-section>
 				{/each}
+			</inventory-materials>
 
-			{/each}
+			<required-grid class="grid">
+				{#each materialsDisplay as materialType, index (index)}
+					<grid-section>
+						{#each materialType.data.required as material, index (index)}
+							<material>
+								<img
+									src="/images/materials/{materialType.type}/{materialType.name}{isNaN(material.lvl) ? '' : material.lvl}.webp"
+									alt=""
+								/>
+								{material.qt}</material
+							>
+						{/each}
+					</grid-section>
+				{/each}
+			</required-grid>
 
-
+			<totals-grid class="grid">
+				{#each materialsDisplay as materialType, index (index)}
+					<grid-section>
+						{#each materialType.data.totals as material, index (index)}
+							<material>
+								<img
+									src="/images/materials/{materialType.type}/{materialType.name}{isNaN(material.lvl) ? '' : material.lvl}.webp"
+									alt=""
+								/>
+								{material.qt}</material
+							>
+						{/each}
+					</grid-section>
+				{/each}
+			</totals-grid>
 		</character-materials-table>
 	</character-body>
 </character-materials>
 
 <style>
+	*.grid {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		flex-direction: column;
+		justify-content: space-around;
+	}
 	character-materials {
 		display: flex;
 		flex-direction: column;
+		margin-bottom: 1rem;
+		border: 2px solid #aaa;
+	}
+
+	character-materials-table {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
 	}
 
 	character-header {
 		display: flex;
 		justify-content: space-around;
+		padding: 1rem;
 	}
 
 	character-body {
@@ -161,13 +223,37 @@
 		flex-direction: row;
 	}
 
-	table {
-		height: max-content;
-		width: 100%;
-		text-align: center;
+	character-image {
+		border: 1px solid #ddd;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
-	table td {
-		border: 1px solid #ccc;
+	grid-section {
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+		/* border-bottom: 1px solid #ddd; */
+	}
+
+	grid-section:nth-child(even) {
+		background-color: hsla(0, 0%, 0%, 0.05);
+	}
+
+	grid-section:nth-child(odd) {
+		background-color: hsla(0, 0%, 0%, 0.025);
+	}
+	material {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid #ddd;
+		width: 100%;
+	}
+
+	material img {
+		width: 30px;
+		height: 30px;
 	}
 </style>

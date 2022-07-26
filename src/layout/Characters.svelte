@@ -28,25 +28,47 @@
 			saveAllCharactersToStorage(characters)
 		}
 	}
+
+	function removeCharacter({ detail }) {
+		let characterId = detail.id
+
+		characters = characters.filter(char => char.id !== characterId)
+
+		saveAllCharactersToStorage(characters)
+	}
 </script>
 
 <characters-svelte>
-	<select bind:value={selectBindValue}>
-		{#each $charactersStore as character, index (index)}
-			<option value={character.id} disabled={characters.find(char => char.id === character.id) === undefined ? false : true}
-				>{character.name}</option
-			>
+	<character-select>
+		<select bind:value={selectBindValue}>
+			{#each $charactersStore.slice(35) as character, index (index)}
+				<option value={character.id} disabled={characters.find(char => char.id === character.id) === undefined ? false : true}
+					>{character.name}</option
+				>
+			{/each}
+		</select>
+
+		<button on:click={() => addCharacter()}>Add</button>
+	</character-select>
+	<characters-list>
+		{#each characters as character, index (index)}
+			<CharacterMaterials on:removeCharacter={removeCharacter} {character} />
 		{/each}
-	</select>
-
-	<button on:click={() => addCharacter()}>Add</button>
-
-	<br />
-
-	{#each characters as character, index (index)}
-		<CharacterMaterials {character} />
-	{/each}
+	</characters-list>
 </characters-svelte>
 
 <style>
+	character-select {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		margin: 1rem;
+	}
+
+	character-select select {
+		margin-right: 1rem;
+	}
+	character-select button {
+		margin-left: 1rem;
+	}
 </style>

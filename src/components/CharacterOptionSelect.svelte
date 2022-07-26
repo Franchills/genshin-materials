@@ -57,7 +57,7 @@
 	</select>
 	-
 	<select bind:value={requiredValue}>
-		{#each values.slice(currentValue) as value, index (index)}
+		{#each values as value, index (index)}
 			<option {value} selected={requiredValue === value}>{value}</option>
 		{/each}
 	</select>
