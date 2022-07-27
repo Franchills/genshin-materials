@@ -215,6 +215,7 @@
 		height: 100%;
 		flex-direction: column;
 		justify-content: space-around;
+		font-size: 1rem;
 	}
 	character-materials {
 		display: flex;
@@ -274,7 +275,7 @@
 	}
 
 	material img {
-		width: 30px;
-		height: 30px;
+		width: 2.5rem;
+		height: 2.5rem;
 	}
 </style>
