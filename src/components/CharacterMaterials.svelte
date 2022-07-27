@@ -227,7 +227,7 @@
 		margin: 0 auto;
 		margin-bottom: 1rem;
 
-		width: 1000px;
+		max-width: 1280px;
 	}
 
 	character-materials-table {
@@ -259,6 +259,9 @@
 		width: 100%;
 		justify-content: space-around;
 		/* border-bottom: 1px solid #ddd; */
+	}
+	grid-section material {
+		padding-right: 0.75rem;
 	}
 
 	grid-section:nth-child(even) {
