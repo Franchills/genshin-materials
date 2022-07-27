@@ -1,4 +1,6 @@
 <script lang="ts">
+	import ArrowDown from '../icons/ArrowDown.svelte'
+	import ArrowUp from '../icons/ArrowUp.svelte'
 	import { saveDataToLs } from '../services/materialStorage.service'
 	import MaterialImage from './MaterialImage.svelte'
 
@@ -9,7 +11,7 @@
 	}
 
 	function showManualInput() {
-		let result = prompt('Enter amount:',materialData.amount)
+		let result = prompt('Enter amount:', materialData.amount)
 
 		if (result !== null) {
 			let value = Number(result)
@@ -37,8 +39,8 @@
 	</material-image>
 	<material-amount>{materialData.amount}</material-amount>
 	<controls>
-		<button on:click={() => shiftValue('down')}>˅</button>
-		<button on:click={() => shiftValue('up')}>˄</button>
+		<shift-value on:click={() => shiftValue('down')}><ArrowDown style="height: 1.5rem;" /></shift-value>
+		<shift-value on:click={() => shiftValue('up')}><ArrowUp style="height: 1.5rem;" /></shift-value>
 	</controls>
 </material-svelte>
 
@@ -66,12 +68,13 @@
 		justify-content: space-around;
 	}
 
-	controls button {
-		width: 1.5rem;
-		height: 1.5rem;
-
+	controls shift-value {
 		cursor: pointer;
-		font-weight: bold;
-		font-size: 1rem;
+
+		transition: transform 50ms ease-in-out;
+	}
+
+	controls shift-value:active {
+		transform: scale(0.8);
 	}
 </style>

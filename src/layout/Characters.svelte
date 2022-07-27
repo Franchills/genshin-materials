@@ -36,6 +36,36 @@
 
 		saveAllCharactersToStorage(characters)
 	}
+
+	function moveCharacter({ detail }) {
+		let characterId = detail.id
+		let direction = detail.direction
+
+		let characterIndex = characters.findIndex(char => char.id === characterId)
+		let currentCharacter = characters[characterIndex]
+
+		if (direction === 'up') {
+			let previousCharacterIndex = characterIndex - 1
+
+			if (characters[previousCharacterIndex] !== undefined) {
+				let previousCharacter = characters[previousCharacterIndex]
+
+				characters[previousCharacterIndex] = currentCharacter
+				characters[characterIndex] = previousCharacter
+			}
+		} else if (direction === 'down') {
+			let nextCharacterIndex = characterIndex + 1
+
+			if (characters[nextCharacterIndex] !== undefined) {
+				let nextCharacter = characters[nextCharacterIndex]
+
+				characters[nextCharacterIndex] = currentCharacter
+				characters[characterIndex] = nextCharacter
+			}
+		}
+
+		saveAllCharactersToStorage(characters)
+	}
 </script>
 
 <characters-svelte>
@@ -54,7 +84,7 @@
 	</character-select>
 	<characters-list>
 		{#each characters as character, index (index)}
-			<CharacterMaterials on:removeCharacter={removeCharacter} {character} />
+			<CharacterMaterials on:removeCharacter={removeCharacter} on:moveCharacter={moveCharacter} {character} />
 		{/each}
 	</characters-list>
 </characters-svelte>

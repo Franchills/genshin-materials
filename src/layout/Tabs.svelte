@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte'
+	import DownloadFile from '../icons/DownloadFile.svelte'
+	import UploadFile from '../icons/UploadFile.svelte'
 
 	const dispatch = createEventDispatcher()
 
@@ -47,8 +49,8 @@
 <tabs-svelte>
 	<button on:click={() => dispatch('changeLayout', 'characters')}>Characters</button>
 	<button on:click={() => dispatch('changeLayout', 'ressources')}>Ressources</button>
-	<button class="small" on:click={() => exportData()}>Export Data ˄</button>
-	<button class="small" on:click={() => clickFileInput()}>Import Data ˅</button>
+	<button class="small" on:click={() => exportData()}>Export Data <UploadFile style="fille:#000;height: 20px;" /> </button>
+	<button class="small" on:click={() => clickFileInput()}>Import Data <DownloadFile style="fille:#000;height: 20px;" /></button>
 </tabs-svelte>
 
 <style>
@@ -57,6 +59,9 @@
 	}
 
 	button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		cursor: pointer;
 		width: 100%;
 		padding: 0.5rem;

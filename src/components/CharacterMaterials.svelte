@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte'
 	import getCharacterMaterialsFn from '../functions/getCharacterMaterials.fn'
+	import ArrowDown from '../icons/ArrowDown.svelte'
+	import ArrowUp from '../icons/ArrowUp.svelte'
 	import { getAllCharactersFromStorage, saveAllCharactersToStorage } from '../services/characterStorage.service'
 	import { getAllDataFromLs } from '../services/materialStorage.service'
 	import { charactersStore } from '../stores/store'
@@ -92,10 +94,19 @@
 			})
 		}
 	}
+
+	function moveCharacter(direction: 'up' | 'down') {
+		dispatch('moveCharacter', {
+			id: character.id,
+			direction
+		})
+	}
 </script>
 
 <character-materials>
 	<character-header>
+		<button on:click={() => moveCharacter('up')}>Move Up</button>
+		<button on:click={() => moveCharacter('down')}>Move Down</button>
 		<button on:click={() => removeCharacter()}>Delete</button>
 		<CharacterOptionSelect
 			on:updateValue={updateValue}
@@ -210,6 +221,10 @@
 		flex-direction: column;
 		margin-bottom: 1rem;
 		border: 2px solid #aaa;
+
+		margin: 0 auto;
+
+		width: 1000px;
 	}
 
 	character-materials-table {
