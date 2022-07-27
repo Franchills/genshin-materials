@@ -8,8 +8,8 @@
 
 	console.clear()
 
-	// let layoutToShow = 'characters'
-	let layoutToShow = 'ressources'
+	let layoutToShow = 'characters'
+	// let layoutToShow = 'ressources'
 
 	onMount(() => {
 		$charactersStore = charaterData

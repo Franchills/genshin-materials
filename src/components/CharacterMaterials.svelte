@@ -46,14 +46,13 @@
 					type: materialType,
 					name: materials[materialType].name,
 					data: {
-						inventory: materialData[materialType.split('_')[0]]
-							.find(material => material.name === materials[materialType].name)
-							?.amount.map((materialAmount, index) => {
-								return {
-									lvl: materials[materialType].data[index].lvl === undefined ? '' : materials[materialType].data[index].lvl,
-									qt: materialAmount
-								}
-							}),
+						inventory: materials[materialType].data.map(material => {
+							return {
+								lvl: material.lvl === undefined ? '' : material.lvl,
+								qt: materialData[materialType.split('_')[0]].find(material => material.name === materials[materialType].name)
+									.amount[material.lvl || 0]
+							}
+						}),
 						required: materials[materialType].data,
 						totals: []
 					}
@@ -83,6 +82,8 @@
 
 			return weights.indexOf(a.type.split('_')[0]) - weights.indexOf(b.type.split('_')[0])
 		})
+
+		// console.dir(materialsDisplay)
 	}
 
 	function removeCharacter() {
@@ -137,7 +138,7 @@
 		/>
 		<CharacterOptionSelect
 			on:updateValue={updateValue}
-			selectTitle="Ascension"
+			selectTitle="Level"
 			selectType="level"
 			selectId={undefined}
 			currentValue={character.level[0]}
