@@ -19,7 +19,7 @@ export function saveDataToLs(materialData, newAmount) {
 }
 
 function getBlankArray(materialData: any) {
-	if (materialData.type === 'mob') {
+	if (['mob', 'talentBook'].includes(materialData.type)) {
 		return [0, 0, 0]
 	}
 
