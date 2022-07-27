@@ -2,7 +2,7 @@
 	export let materialData
 
 	function getLvlImage() {
-		if (['bigBoss', 'boss', 'natural', 'crown'].includes(materialData.type)) {
+		if (['bigBoss', 'boss', 'natural'].includes(materialData.type) || materialData.name === 'crownOfInsight') {
 			return ''
 		} else {
 			return materialData.lvl

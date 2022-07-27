@@ -1,12 +1,20 @@
 <script lang="ts">
+	import { onMount } from 'svelte'
+	import getMaterialsWeightFn from '../functions/getMaterialsWeight.fn'
 	import Material from './Material.svelte'
 
 	export let gridName
 	export let materialData = []
 	export let materialType
+
+	onMount(() => {
+		materialData = materialData.sort((a, b) => getMaterialsWeightFn.indexOf(a.name) - getMaterialsWeightFn.indexOf(b.name))
+	})
 </script>
 
-<grid-name>{gridName}</grid-name>
+{#if gridName !== ''}
+	<grid-name>{gridName}</grid-name>
+{/if}
 <mob-materials class="grid">
 	{#each materialData as material, index (index)}
 		{#each material.amount as mobMaterialAmount, index (index)}

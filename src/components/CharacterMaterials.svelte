@@ -48,10 +48,10 @@
 					data: {
 						inventory: materialData[materialType.split('_')[0]]
 							.find(material => material.name === materials[materialType].name)
-							?.amount.map((material, index) => {
+							?.amount.map((materialAmount, index) => {
 								return {
-									lvl: ['natural', 'crown', 'boss', 'bigBoss'].includes(materialType.split('_')[0]) ? undefined : index,
-									qt: material
+									lvl: materials[materialType].data[index].lvl === undefined ? '' : materials[materialType].data[index].lvl,
+									qt: materialAmount
 								}
 							}),
 						required: materials[materialType].data,
@@ -79,7 +79,7 @@
 		}
 
 		materialsDisplay = materialsDisplay.sort((a, b) => {
-			let weights = ['gem', 'mob', 'talentBook', 'boss', 'bigBoss', 'natural', 'crown']
+			let weights = ['gem', 'mob', 'talentBook', 'boss', 'bigBoss', 'natural']
 
 			return weights.indexOf(a.type.split('_')[0]) - weights.indexOf(b.type.split('_')[0])
 		})

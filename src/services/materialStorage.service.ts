@@ -10,7 +10,7 @@ export function saveDataToLs(materialData, newAmount) {
 	if (lsData[materialData.type].find(item => item.name === materialData.name) === undefined) {
 		lsData[materialData.type].push({
 			name: materialData.name,
-			amount: getBlankArray(materialData.type)
+			amount: getBlankArray(materialData)
 		})
 	}
 
@@ -18,12 +18,16 @@ export function saveDataToLs(materialData, newAmount) {
 	localStorage.setItem('ressources', JSON.stringify(lsData))
 }
 
-function getBlankArray(materialType: string) {
-	if (materialType === 'mob') {
+function getBlankArray(materialData: any) {
+	if (materialData.type === 'mob') {
 		return [0, 0, 0]
-	} else if (['boss', 'bigBoss', 'crown','natural'].includes(materialType)) {
+	}
+
+	if (['boss', 'bigBoss', 'natural'].includes(materialData.type) || materialData.name === 'crownOfInsight') {
 		return [0]
-	} else if (['weapon', 'gem'].includes(materialType)) {
+	}
+
+	if (['weapon', 'gem'].includes(materialData.type)) {
 		return [0, 0, 0, 0]
 	}
 }

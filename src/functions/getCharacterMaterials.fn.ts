@@ -83,6 +83,8 @@ function mergeTalentsMaterials(character, talentsRequiredValue) {
 			let material = materials[`${talentType}_${characterMaterial}`]
 
 			if (material === undefined) {
+				talentType = talentType.replace('crown', 'talentBook')
+
 				materials[`${talentType}_${characterMaterial}`] = {
 					name: characterMaterial,
 					data: [
@@ -121,7 +123,6 @@ function mergeAscensionMaterials(character, levelsRequired) {
 			let characterMaterial = character.ascensionMaterials[materialType]
 
 			let material = materials[`${materialType}_${characterMaterial}`]
-			// let material = materials[materialType]
 
 			if (material === undefined) {
 				materials[`${materialType}_${characterMaterial}`] = {

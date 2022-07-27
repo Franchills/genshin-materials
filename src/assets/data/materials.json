@@ -1,12 +1,4 @@
 {
-  "crown": [
-    {
-      "name": "crownOfInsight",
-      "amount": [
-        0
-      ]
-    }
-  ],
   "mob": [
     {
       "name": "arrow",
@@ -587,6 +579,12 @@
     }
   ],
   "talentBook": [
+    {
+      "name": "crownOfInsight",
+      "amount": [
+        0
+      ]
+    },
     {
       "name": "ballad",
       "amount": [
