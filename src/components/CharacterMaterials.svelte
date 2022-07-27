@@ -224,6 +224,7 @@
 		border: 2px solid #aaa;
 
 		margin: 0 auto;
+		margin-bottom: 1rem;
 
 		width: 1000px;
 	}
