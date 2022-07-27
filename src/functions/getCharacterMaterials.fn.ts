@@ -45,6 +45,7 @@ export default function (
 						}
 					})
 				}
+				materials[materialType].data = materials[materialType].data.sort((a, b) => a.lvl - b.lvl)
 			}
 		})
 
