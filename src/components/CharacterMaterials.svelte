@@ -199,8 +199,13 @@
 										: material.lvl}.webp"
 									alt=""
 								/>
-								{material.qt}</material
-							>
+
+								{#if material.qt < 0}
+									<bold>{material.qt}</bold>
+								{:else}
+									{material.qt}
+								{/if}
+							</material>
 						{/each}
 					</grid-section>
 				{/each}
@@ -262,6 +267,10 @@
 	}
 	grid-section material {
 		padding-right: 0.75rem;
+	}
+
+	grid-section material bold {
+		font-variation-settings: 'wght' 800;
 	}
 
 	grid-section:nth-child(even) {
