@@ -4,8 +4,6 @@
 	import { getAllCharactersFromStorage, saveAllCharactersToStorage } from '../services/characterStorage.service'
 	import { charactersStore } from '../stores/store'
 
-	let selectBindValue = ''
-
 	let characters = []
 
 	onMount(() => {
@@ -13,20 +11,21 @@
 	})
 
 	function addCharacter() {
-		if (selectBindValue !== '') {
-			characters.push({
-				id: selectBindValue,
-				level: [1, 90],
-				talents: {
-					normalAttack: [1, 10],
-					skill: [1, 10],
-					burst: [1, 10]
-				}
-			})
-			characters = characters
-			selectBindValue = ''
-			saveAllCharactersToStorage(characters)
-		}
+		let selecteElement = document.querySelector('character-select select') as HTMLSelectElement
+		let selectValue = selecteElement.value
+
+		characters.push({
+			id: selectValue,
+			level: [1, 90],
+			talents: {
+				normalAttack: [1, 10],
+				skill: [1, 10],
+				burst: [1, 10]
+			}
+		})
+		characters = characters
+
+		saveAllCharactersToStorage(characters)
 	}
 
 	function removeCharacter({ detail }) {
@@ -70,12 +69,10 @@
 
 <characters-svelte>
 	<character-select>
-		<select bind:value={selectBindValue}>
+		<select>
 			{#each $charactersStore as character, index (index)}
 				{#if characters.find(char => char.id === character.id) === undefined}
-					<option value={character.id} disabled={characters.find(char => char.id === character.id) === undefined ? false : true}
-						>{character.name}</option
-					>
+					<option value={character.id}>{character.name}</option>
 				{/if}
 			{/each}
 		</select>

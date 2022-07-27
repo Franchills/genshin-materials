@@ -13,3 +13,13 @@ html {
 button {
 	padding: 0.125rem 0.25rem;
 }
+
+@media (prefers-color-scheme: dark) {
+	html {
+		filter: invert(1);
+	}
+
+	img {
+		filter: invert(1);
+	}
+}

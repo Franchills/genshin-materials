@@ -7,13 +7,15 @@
 
 	function exportData() {
 		let data = {
-			ressources: JSON.parse(localStorage.getItem('ressources')),
-			characters: JSON.parse(localStorage.getItem('characters'))
+			ressources: JSON.parse(localStorage.getItem('ressources')) || {},
+			characters: JSON.parse(localStorage.getItem('characters')) || []
 		}
 
 		const anchor = document.createElement('a')
 		anchor.href = URL.createObjectURL(new Blob([JSON.stringify(data)], { type: 'text/json' }))
-		anchor.download = `genshinRessources_${Date.now()}.json`
+		anchor.download = `genshinRessources_${new Date().getFullYear()}${
+			new Date().getMonth() + 1
+		}${new Date().getDate()}_${new Date().getHours()}${new Date().getMinutes()}${new Date().getSeconds()}.json`
 		anchor.click()
 	}
 
