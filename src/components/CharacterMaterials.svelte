@@ -10,7 +10,7 @@
 	import CharacterOptionSelect from './CharacterOptionSelect.svelte'
 
 	export let character
-	let materialData = getAllDataFromLs()
+	let inventoryMaterials = getAllDataFromLs()
 	let materialsDisplay = []
 
 	let dispatch = createEventDispatcher()
@@ -49,8 +49,9 @@
 						inventory: materials[materialType].data.map(material => {
 							return {
 								lvl: material.lvl === undefined ? '' : material.lvl,
-								qt: materialData[materialType.split('_')[0]].find(material => material.name === materials[materialType].name)
-									.amount[material.lvl || 0]
+								qt: inventoryMaterials[materialType.split('_')[0]].find(
+									material => material.name === materials[materialType].name
+								).amount[material.lvl || 0]
 							}
 						}),
 						required: materials[materialType].data,
@@ -61,19 +62,35 @@
 		}
 
 		for (let material of materialsDisplay) {
-			let inventoryMaterials = material.data.inventory
-			let requiredMaterials = material.data.required
+			let characterInventoryMaterials = material.data.inventory
+			let characterRequiredMaterials = material.data.required
 			let totals = []
 
-			requiredMaterials.forEach((requiredMaterial, index) => {
-				let qtDifference = inventoryMaterials[index].qt - requiredMaterials[index].qt + (totals[index - 1] || 0) / 3
+			let inventoryMaterial = inventoryMaterials[material.type.split('_')[0]].find(
+				mat => mat.name === material.type.split('_')[1]
+			)
+
+			inventoryMaterial.amount.forEach((amount, index) => {
+				let requiredMaterial = characterRequiredMaterials.find(mat => mat.lvl === index)
+
+				let qtDifference = amount - (requiredMaterial?.qt || 0) + (totals[index - 1] || 0) / 3
 
 				totals.push(qtDifference >= 0 ? qtDifference : 0)
 
-				material.data.totals.push({
-					lvl: requiredMaterial.lvl,
-					qt: Number(qtDifference.toFixed(2))
-				})
+				if (requiredMaterial?.qt !== undefined) {
+					material.data.totals.push({
+						lvl: index,
+						qt: Number(qtDifference.toFixed(2))
+					})
+				} else if (
+					requiredMaterial === undefined &&
+					characterRequiredMaterials.find(mat => mat.lvl !== undefined) === undefined
+				) {
+					material.data.totals.push({
+						lvl: '',
+						qt: Number(qtDifference.toFixed(2))
+					})
+				}
 			})
 		}
 
