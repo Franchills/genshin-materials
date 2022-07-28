@@ -172,6 +172,7 @@
 		</character-image>
 		<character-materials-table>
 			<inventory-materials class="grid">
+				<grid-title>Inventory</grid-title>
 				{#each materialsDisplay as materialType, index (index)}
 					<grid-section>
 						{#each materialType.data.inventory as material, index (index)}
@@ -190,6 +191,7 @@
 			</inventory-materials>
 
 			<required-grid class="grid">
+				<grid-title>Required</grid-title>
 				{#each materialsDisplay as materialType, index (index)}
 					<grid-section>
 						{#each materialType.data.required as material, index (index)}
@@ -208,6 +210,7 @@
 			</required-grid>
 
 			<totals-grid class="grid">
+				<grid-title>Totals</grid-title>
 				{#each materialsDisplay as materialType, index (index)}
 					<grid-section>
 						{#each materialType.data.totals as material, index (index)}
@@ -241,6 +244,15 @@
 		flex-direction: column;
 		justify-content: space-around;
 		font-size: 1rem;
+	}
+
+	grid-title {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: #ddd 1px solid;
+		font-variation-settings: 'wght' 700;
+		font-size: 0.9rem;
 	}
 	character-materials {
 		display: flex;
