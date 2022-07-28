@@ -71,7 +71,7 @@
 			)
 
 			inventoryMaterial.amount.forEach((amount, index) => {
-				let requiredMaterial = characterRequiredMaterials.find(mat => mat.lvl === index)
+				let requiredMaterial = characterRequiredMaterials.find(mat => mat.lvl === index || mat.lvl === undefined)
 
 				let qtDifference = amount - (requiredMaterial?.qt || 0) + (totals[index - 1] || 0) / 3
 
@@ -79,15 +79,7 @@
 
 				if (requiredMaterial?.qt !== undefined) {
 					material.data.totals.push({
-						lvl: index,
-						qt: Number(qtDifference.toFixed(2))
-					})
-				} else if (
-					requiredMaterial === undefined &&
-					characterRequiredMaterials.find(mat => mat.lvl !== undefined) === undefined
-				) {
-					material.data.totals.push({
-						lvl: '',
+						lvl: requiredMaterial.lvl,
 						qt: Number(qtDifference.toFixed(2))
 					})
 				}
