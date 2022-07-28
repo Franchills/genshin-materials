@@ -40,18 +40,29 @@
 
 		materialsDisplay = []
 
+		console.clear()
+
 		for (let materialType in materials) {
 			if (materialType.split('_')[1] !== 'undefined') {
+				let inventoryMaterial = inventoryMaterials[materialType.split('_')[0]].find(
+					mat => mat.name === materialType.split('_')[1]
+				)
+
+				inventoryMaterial.amount.map((amount, index, self) => {
+					return {
+						lvl: self.length > 1 ? index : '',
+						qt: amount
+					}
+				})
+
 				materialsDisplay.push({
 					type: materialType,
 					name: materials[materialType].name,
 					data: {
-						inventory: materials[materialType].data.map(material => {
+						inventory: inventoryMaterial.amount.map((amount, index, self) => {
 							return {
-								lvl: material.lvl === undefined ? '' : material.lvl,
-								qt: inventoryMaterials[materialType.split('_')[0]].find(
-									material => material.name === materials[materialType].name
-								).amount[material.lvl || 0]
+								lvl: self.length > 1 ? index : '',
+								qt: amount
 							}
 						}),
 						required: materials[materialType].data,
@@ -62,7 +73,6 @@
 		}
 
 		for (let material of materialsDisplay) {
-			let characterInventoryMaterials = material.data.inventory
 			let characterRequiredMaterials = material.data.required
 			let totals = []
 
