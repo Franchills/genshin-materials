@@ -1,21 +1,25 @@
 import materialsData from '../assets/data/materials.json'
 
 export function saveDataToLs(materialData, newAmount) {
-	let lsData = JSON.parse(localStorage.getItem('ressources') || '{}')
+	return new Promise((resolve, reject) => {
+		let lsData = JSON.parse(localStorage.getItem('ressources') || '{}')
 
-	if (lsData[materialData.type] === undefined) {
-		lsData[materialData.type] = []
-	}
+		if (lsData[materialData.type] === undefined) {
+			lsData[materialData.type] = []
+		}
 
-	if (lsData[materialData.type].find(item => item.name === materialData.name) === undefined) {
-		lsData[materialData.type].push({
-			name: materialData.name,
-			amount: getBlankArray(materialData)
-		})
-	}
+		if (lsData[materialData.type].find(item => item.name === materialData.name) === undefined) {
+			lsData[materialData.type].push({
+				name: materialData.name,
+				amount: getBlankArray(materialData)
+			})
+		}
 
-	lsData[materialData.type].find(item => item.name === materialData.name).amount[materialData.lvl] = +newAmount
-	localStorage.setItem('ressources', JSON.stringify(lsData))
+		lsData[materialData.type].find(item => item.name === materialData.name).amount[materialData.lvl] = +newAmount
+		localStorage.setItem('ressources', JSON.stringify(lsData))
+
+		resolve('')
+	})
 }
 
 function getBlankArray(materialData: any) {

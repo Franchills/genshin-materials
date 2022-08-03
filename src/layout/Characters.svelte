@@ -89,7 +89,6 @@
 <style>
 	character-select {
 		display: flex;
-		width: 100%;
 		justify-content: center;
 		margin: 1rem;
 	}

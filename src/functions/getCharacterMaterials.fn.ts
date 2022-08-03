@@ -1,5 +1,3 @@
-import deepmerge from 'deepmerge'
-
 import type { CharacterType } from '../types/character.type'
 import type { MaterialsType } from '../types/materials.type'
 

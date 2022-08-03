@@ -1,16 +1,14 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte'
 	import getCharacterMaterialsFn from '../functions/getCharacterMaterials.fn'
-	import ArrowDown from '../icons/ArrowDown.svelte'
-	import ArrowUp from '../icons/ArrowUp.svelte'
 	import { getAllCharactersFromStorage, saveAllCharactersToStorage } from '../services/characterStorage.service'
-	import { getAllDataFromLs } from '../services/materialStorage.service'
+	import { getAllDataFromLs, saveDataToLs } from '../services/materialStorage.service'
 	import { charactersStore } from '../stores/store'
 	import CharacterImage from './CharacterImage.svelte'
 	import CharacterOptionSelect from './CharacterOptionSelect.svelte'
 
 	export let character
-	let inventoryMaterials = getAllDataFromLs()
+
 	let materialsDisplay = []
 
 	let dispatch = createEventDispatcher()
@@ -35,12 +33,11 @@
 	}
 
 	async function loadMaterials() {
+		let inventoryMaterials = getAllDataFromLs()
 		let characterStore = $charactersStore.find(char => char.id === character.id)
 		let materials = await getCharacterMaterialsFn(characterStore, character.level, character.talents)
 
 		materialsDisplay = []
-
-		console.clear()
 
 		for (let materialType in materials) {
 			if (materialType.split('_')[1] !== 'undefined') {
@@ -101,8 +98,6 @@
 
 			return weights.indexOf(a.type.split('_')[0]) - weights.indexOf(b.type.split('_')[0])
 		})
-
-		// console.dir(materialsDisplay)
 	}
 
 	function removeCharacter() {
@@ -119,6 +114,50 @@
 		dispatch('moveCharacter', {
 			id: character.id,
 			direction
+		})
+	}
+
+	function clickHandler(evt, material) {
+		let materialQtElement = evt.target.closest('material').querySelector('material-qt')
+
+		if (evt.shiftKey === true) {
+			let result = prompt('Enter amount:', materialQtElement.innerText)
+
+			if (result !== null) {
+				let value = Number(result)
+				if (!isNaN(value)) {
+					if (value >= 0) {
+						material.amount = value
+					} else {
+						material.amount = 0
+					}
+				} else {
+					material.amount = 0
+				}
+			}
+		} else {
+			material.amount = Number(materialQtElement.innerText) + 1
+		}
+
+		materialQtElement.innerText = material.amount
+
+		saveDataToLs(material, material.amount).then(() => {
+			loadMaterials()
+		})
+	}
+
+	function rightClickHandler(evt, material) {
+		evt.preventDefault()
+		let materialQtElement = evt.target.closest('material').querySelector('material-qt')
+
+		if (Number(materialQtElement.innerText) - 1 < 0) return
+
+		material.amount = Number(materialQtElement.innerText) - 1
+
+		materialQtElement.innerText = material.amount
+
+		saveDataToLs(material, material.amount).then(() => {
+			loadMaterials()
 		})
 	}
 </script>
@@ -176,14 +215,29 @@
 				{#each materialsDisplay as materialType, index (index)}
 					<grid-section>
 						{#each materialType.data.inventory as material, index (index)}
-							<material>
+							<material
+								on:click={evt =>
+									clickHandler(evt, {
+										name: materialType.name,
+										type: materialType.type.split('_')[0],
+										lvl: material.lvl === '' ? 0 : material.lvl,
+										amount: material.qt
+									})}
+								on:contextmenu={evt =>
+									rightClickHandler(evt, {
+										name: materialType.name,
+										type: materialType.type.split('_')[0],
+										lvl: material.lvl === '' ? 0 : material.lvl,
+										amount: material.qt
+									})}
+							>
 								<img
 									src="/images/materials/{materialType.type.split('_')[0]}/{materialType.name}{isNaN(material.lvl)
 										? ''
 										: material.lvl}.webp"
 									alt=""
 								/>
-								{material.qt}</material
+								<material-qt>{material.qt}</material-qt></material
 							>
 						{/each}
 					</grid-section>
