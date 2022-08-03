@@ -216,6 +216,7 @@
 					<grid-section>
 						{#each materialType.data.inventory as material, index (index)}
 							<material
+								style="cursor:pointer"
 								on:click={evt =>
 									clickHandler(evt, {
 										name: materialType.name,
