@@ -3,7 +3,7 @@
 	import getCharacterMaterialsFn from '../functions/getCharacterMaterials.fn'
 	import { getAllCharactersFromStorage, saveAllCharactersToStorage } from '../services/characterStorage.service'
 	import { getAllDataFromLs, saveDataToLs } from '../services/materialStorage.service'
-	import { charactersStore } from '../stores/store'
+	import { charactersStore, materialsDBVersion } from '../stores/store'
 	import CharacterImage from './CharacterImage.svelte'
 	import CharacterOptionSelect from './CharacterOptionSelect.svelte'
 
@@ -16,6 +16,12 @@
 	$: {
 		character
 		loadMaterials()
+	}
+
+	$: {
+		if ($materialsDBVersion !== 0) {
+			loadMaterials()
+		}
 	}
 
 	function updateValue({ detail }) {
@@ -139,10 +145,8 @@
 			material.amount = Number(materialQtElement.innerText) + 1
 		}
 
-		materialQtElement.innerText = material.amount
-
 		saveDataToLs(material, material.amount).then(() => {
-			loadMaterials()
+			$materialsDBVersion = Date.now()
 		})
 	}
 
@@ -154,10 +158,8 @@
 
 		material.amount = Number(materialQtElement.innerText) - 1
 
-		materialQtElement.innerText = material.amount
-
 		saveDataToLs(material, material.amount).then(() => {
-			loadMaterials()
+			$materialsDBVersion = Date.now()
 		})
 	}
 </script>
