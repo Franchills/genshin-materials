@@ -23,11 +23,15 @@ export function saveDataToLs(materialData, newAmount) {
 }
 
 function getBlankArray(materialData: any) {
+	if (['talentBook'].includes(materialData.type) && materialData.name === 'crownOfInsight') {
+		return [0]
+	}
+
 	if (['mob', 'talentBook'].includes(materialData.type)) {
 		return [0, 0, 0]
 	}
 
-	if (['boss', 'bigBoss', 'natural'].includes(materialData.type) || materialData.name === 'crownOfInsight') {
+	if (['boss', 'bigBoss', 'natural'].includes(materialData.type)) {
 		return [0]
 	}
 
