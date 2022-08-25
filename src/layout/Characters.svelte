@@ -70,7 +70,7 @@
 <characters-svelte>
 	<character-select>
 		<select>
-			{#each $charactersStore as character, index (index)}
+			{#each $charactersStore.sort((a, b) => a.name.localeCompare(b.name)) as character, index (index)}
 				{#if characters.find(char => char.id === character.id) === undefined}
 					<option value={character.id}>{character.name}</option>
 				{/if}

@@ -26,7 +26,20 @@
 	{:else if layoutToShow === 'ressources'}
 		<Ressources />
 	{/if}
+
+	<app-version>3.0.0</app-version>
 </main>
 
 <style>
+	app-version {
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		background-color: rgb(80, 168, 255);
+		color: aliceblue;
+		padding: 0.25rem 0.75rem;
+		margin: 0.5rem;
+		border-radius: 50px;
+		font-weight: 700;
+	}
 </style>

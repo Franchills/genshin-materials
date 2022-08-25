@@ -151,6 +151,14 @@
         0,
         0
       ]
+    },
+    {
+      "name": "fungalSpore",
+      "amount": [
+        0,
+        0,
+        0
+      ]
     }
   ],
   "boss": [
@@ -246,6 +254,12 @@
     },
     {
       "name": "stormBeads",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "majesticHookedBeak",
       "amount": [
         0
       ]
@@ -424,6 +438,15 @@
         0,
         0
       ]
+    },
+    {
+      "name": "dendroGem",
+      "amount": [
+        0,
+        0,
+        0,
+        0
+      ]
     }
   ],
   "natural": [
@@ -576,6 +599,18 @@
       "amount": [
         0
       ]
+    },
+    {
+      "name": "nilotpalaLotus",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "rukkhashavaMushrooms",
+      "amount": [
+        0
+      ]
     }
   ],
   "talentBook": [
@@ -651,6 +686,30 @@
     },
     {
       "name": "transience",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "praxis",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "admonition",
+      "amount": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "ingenuity",
       "amount": [
         0,
         0,

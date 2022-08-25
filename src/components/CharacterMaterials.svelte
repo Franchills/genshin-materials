@@ -327,6 +327,7 @@
 		width: 100%;
 		display: flex;
 		flex-direction: row;
+		height: 100%;
 	}
 
 	character-header {
