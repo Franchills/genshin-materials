@@ -18,6 +18,7 @@ export default [
 	'specter',
 	'concealedClaw',
 	'statuette',
+	'fungalSpore',
 	'dvalinsPlume',
 	'dvalinsClaw',
 	'dvalinsSigh',
@@ -52,6 +53,7 @@ export default [
 	'riftbornRegalia',
 	'dragonheirsFalseFin',
 	'runicFang',
+	'majesticHookedBeak',
 	'diamondGem',
 	'pyroGem',
 	'hydroGem',
@@ -69,6 +71,9 @@ export default [
 	'transience',
 	'elegance',
 	'light',
+	'admonition',
+	'ingenuity',
+	'praxis',
 	'crownOfInsight',
 	'wolfhook',
 	'valberry',
@@ -94,5 +99,7 @@ export default [
 	'seaGanoderma',
 	'sangoPearl',
 	'amakumoFruit',
-	'fluorescentFungus'
+	'fluorescentFungus',
+	'nilotpalaLotus',
+	'rukkhashavaMushrooms'
 ]

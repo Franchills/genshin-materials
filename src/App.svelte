@@ -6,7 +6,7 @@
 	import Tabs from './layout/Tabs.svelte'
 	import { charactersStore } from './stores/store'
 
-	console.clear()
+	// console.clear()
 
 	let layoutToShow = 'characters'
 	// let layoutToShow = 'ressources'
@@ -27,7 +27,7 @@
 		<Ressources />
 	{/if}
 
-	<app-version>3.0.0</app-version>
+	<app-version>3.0.1</app-version>
 </main>
 
 <style>
