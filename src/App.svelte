@@ -27,7 +27,7 @@
 		<Ressources />
 	{/if}
 
-	<app-version>3.0.1</app-version>
+	<app-version>3.0.2</app-version>
 </main>
 
 <style>
@@ -41,5 +41,16 @@
 		margin: 0.5rem;
 		border-radius: 50px;
 		font-weight: 700;
+
+		animation: cycleColor 600s infinite;
+	}
+
+	@keyframes cycleColor {
+		from {
+			filter: hue-rotate(0deg);
+		}
+		to {
+			filter: hue-rotate(360deg);
+		}
 	}
 </style>

@@ -310,6 +310,7 @@
 		border: #ddd 1px solid;
 		font-variation-settings: 'wght' 700;
 		font-size: 0.9rem;
+		margin-block-end: auto;
 	}
 	character-materials {
 		display: flex;
@@ -327,7 +328,7 @@
 		width: 100%;
 		display: flex;
 		flex-direction: row;
-		height: 100%;
+		/* height: 100%; */
 	}
 
 	character-header {
@@ -352,10 +353,12 @@
 		display: flex;
 		width: 100%;
 		justify-content: space-around;
+		height: 100%;
 		/* border-bottom: 1px solid #ddd; */
 	}
 	grid-section material {
 		padding-right: 0.75rem;
+		/* height: 100%; */
 	}
 
 	grid-section material bold {

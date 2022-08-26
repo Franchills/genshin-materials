@@ -2,11 +2,18 @@
 	export let characterId
 </script>
 
-<img src="/images/characters/{characterId}.webp" alt="" />
+<character-image>
+	<img src="/images/characters/{characterId}.webp" alt="" />
+</character-image>
 
 <style>
+
+	character-image{
+		display: flex;
+		align-self: end;
+		width: 100px;
+	}
 	img {
-		height: 250px;
-		/* width: 100px; */
+		width: 100%;
 	}
 </style>

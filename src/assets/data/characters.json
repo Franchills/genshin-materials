@@ -5,12 +5,12 @@
     "ascensionMaterials": {
       "gem": "geoGem",
       "natural": "cecilia",
-      "mob": "scroll",
+      "mob": "samachurlScroll",
       "boss": "basaltPillar"
     },
     "talentMaterials": {
       "talentBook": "ballad",
-      "mob": "scroll",
+      "mob": "samachurlScroll",
       "bigBoss": "tuskOfMonocerosCaeli",
       "crown": "crownOfInsight"
     }
@@ -21,12 +21,12 @@
     "ascensionMaterials": {
       "gem": "cryoGem",
       "natural": "crystalMarrow",
-      "mob": "specter",
+      "mob": "spectralCore",
       "boss": "crystallineBloom"
     },
     "talentMaterials": {
       "talentBook": "freedom",
-      "mob": "specter",
+      "mob": "spectralCore",
       "bigBoss": "moltenMoment",
       "crown": "crownOfInsight"
     }
@@ -37,12 +37,12 @@
     "ascensionMaterials": {
       "gem": "pyroGem",
       "natural": "smallLampGrass",
-      "mob": "arrow",
+      "mob": "hilichurlArrowhead",
       "boss": "everflameSeed"
     },
     "talentMaterials": {
       "talentBook": "freedom",
-      "mob": "arrow",
+      "mob": "hilichurlArrowhead",
       "bigBoss": "dvalinsSigh",
       "crown": "crownOfInsight"
     }
@@ -53,12 +53,12 @@
     "ascensionMaterials": {
       "gem": "geoGem",
       "natural": "onikabuto",
-      "mob": "slime",
+      "mob": "slimeSlime",
       "boss": "riftbornRegalia"
     },
     "talentMaterials": {
       "talentBook": "elegance",
-      "mob": "slime",
+      "mob": "slimeSlime",
       "bigBoss": "ashenHeart",
       "crown": "crownOfInsight"
     }
@@ -69,12 +69,12 @@
     "ascensionMaterials": {
       "gem": "hydroGem",
       "natural": "philanemoMushroom",
-      "mob": "scroll",
+      "mob": "samachurlScroll",
       "boss": "cleansingHeart"
     },
     "talentMaterials": {
       "talentBook": "freedom",
-      "mob": "scroll",
+      "mob": "samachurlScroll",
       "bigBoss": "ringOfBoreas",
       "crown": "crownOfInsight"
     }
@@ -85,12 +85,12 @@
     "ascensionMaterials": {
       "gem": "electroGem",
       "natural": "noctilucousJade",
-      "mob": "ravenInsignia",
+      "mob": "treasureHoarderInsignia",
       "boss": "juvenileJade"
     },
     "talentMaterials": {
       "talentBook": "gold",
-      "mob": "ravenInsignia",
+      "mob": "treasureHoarderInsignia",
       "bigBoss": "dvalinsSigh",
       "crown": "crownOfInsight"
     }
@@ -101,12 +101,12 @@
     "ascensionMaterials": {
       "gem": "pyroGem",
       "natural": "windwheelAster",
-      "mob": "ravenInsignia",
+      "mob": "treasureHoarderInsignia",
       "boss": "everflameSeed"
     },
     "talentMaterials": {
       "talentBook": "resistance",
-      "mob": "ravenInsignia",
+      "mob": "treasureHoarderInsignia",
       "bigBoss": "dvalinsPlume",
       "crown": "crownOfInsight"
     }
@@ -117,12 +117,12 @@
     "ascensionMaterials": {
       "gem": "cryoGem",
       "natural": "corLapis",
-      "mob": "mask",
+      "mob": "hilichurlMask",
       "boss": "hoarfrostCore"
     },
     "talentMaterials": {
       "talentBook": "diligence",
-      "mob": "mask",
+      "mob": "hilichurlMask",
       "bigBoss": "dvalinsSigh",
       "crown": "crownOfInsight"
     }
@@ -149,12 +149,12 @@
     "ascensionMaterials": {
       "gem": "cryoGem",
       "natural": "callaLily",
-      "mob": "arrow",
+      "mob": "hilichurlArrowhead",
       "boss": "hoarfrostCore"
     },
     "talentMaterials": {
       "talentBook": "freedom",
-      "mob": "arrow",
+      "mob": "hilichurlArrowhead",
       "bigBoss": "shardOfAFoulLegacy",
       "crown": "crownOfInsight"
     }
@@ -165,12 +165,12 @@
     "ascensionMaterials": {
       "gem": "cryoGem",
       "natural": "dandelionSeed",
-      "mob": "mask",
+      "mob": "hilichurlMask",
       "boss": "crystallineBloom"
     },
     "talentMaterials": {
       "talentBook": "resistance",
-      "mob": "mask",
+      "mob": "hilichurlMask",
       "bigBoss": "dragonLordsCrown",
       "crown": "crownOfInsight"
     }
@@ -181,12 +181,12 @@
     "ascensionMaterials": {
       "gem": "electroGem",
       "natural": "smallLampGrass",
-      "mob": "arrow",
+      "mob": "hilichurlArrowhead",
       "boss": "lightningPrism"
     },
     "talentMaterials": {
       "talentBook": "ballad",
-      "mob": "arrow",
+      "mob": "hilichurlArrowhead",
       "bigBoss": "spiritLocketOfBoreas",
       "crown": "crownOfInsight"
     }
@@ -213,12 +213,12 @@
     "ascensionMaterials": {
       "gem": "geoGem",
       "natural": "sangoPearl",
-      "mob": "specter",
+      "mob": "spectralCore",
       "boss": "juvenileJade"
     },
     "talentMaterials": {
       "talentBook": "light",
-      "mob": "specter",
+      "mob": "spectralCore",
       "bigBoss": "moltenMoment",
       "crown": "crownOfInsight"
     }
@@ -245,12 +245,12 @@
     "ascensionMaterials": {
       "gem": "anemoGem",
       "natural": "dandelionSeed",
-      "mob": "mask",
+      "mob": "hilichurlMask",
       "boss": "hurricaneSeed"
     },
     "talentMaterials": {
       "talentBook": "resistance",
-      "mob": "mask",
+      "mob": "hilichurlMask",
       "bigBoss": "dvalinsPlume",
       "crown": "crownOfInsight"
     }
@@ -261,12 +261,12 @@
     "ascensionMaterials": {
       "gem": "anemoGem",
       "natural": "seaGanoderma",
-      "mob": "ravenInsignia",
+      "mob": "treasureHoarderInsignia",
       "boss": "marionetteCore"
     },
     "talentMaterials": {
       "talentBook": "diligence",
-      "mob": "ravenInsignia",
+      "mob": "treasureHoarderInsignia",
       "bigBoss": "gildedScale",
       "crown": "crownOfInsight"
     }
@@ -277,12 +277,12 @@
     "ascensionMaterials": {
       "gem": "cryoGem",
       "natural": "callaLily",
-      "mob": "ravenInsignia",
+      "mob": "treasureHoarderInsignia",
       "boss": "hoarfrostCore"
     },
     "talentMaterials": {
       "talentBook": "ballad",
-      "mob": "ravenInsignia",
+      "mob": "treasureHoarderInsignia",
       "bigBoss": "spiritLocketOfBoreas",
       "crown": "crownOfInsight"
     }
@@ -293,12 +293,12 @@
     "ascensionMaterials": {
       "gem": "cryoGem",
       "natural": "sakuraBloom",
-      "mob": "handguard",
+      "mob": "nobushiHandguard",
       "boss": "perpetualHeart"
     },
     "talentMaterials": {
       "talentBook": "elegance",
-      "mob": "handguard",
+      "mob": "nobushiHandguard",
       "bigBoss": "bloodjadeBranch",
       "crown": "crownOfInsight"
     }
@@ -309,12 +309,12 @@
     "ascensionMaterials": {
       "gem": "hydroGem",
       "natural": "sakuraBloom",
-      "mob": "handguard",
+      "mob": "nobushiHandguard",
       "boss": "dewOfRepudiation"
     },
     "talentMaterials": {
       "talentBook": "elegance",
-      "mob": "handguard",
+      "mob": "nobushiHandguard",
       "bigBoss": "mudraOfTheMaleficGeneral",
       "crown": "crownOfInsight"
     }
@@ -341,12 +341,12 @@
     "ascensionMaterials": {
       "gem": "pyroGem",
       "natural": "philanemoMushroom",
-      "mob": "scroll",
+      "mob": "samachurlScroll",
       "boss": "everflameSeed"
     },
     "talentMaterials": {
       "talentBook": "freedom",
-      "mob": "scroll",
+      "mob": "samachurlScroll",
       "bigBoss": "ringOfBoreas",
       "crown": "crownOfInsight"
     }
@@ -357,12 +357,12 @@
     "ascensionMaterials": {
       "gem": "electroGem",
       "natural": "dendrobium",
-      "mob": "mask",
+      "mob": "hilichurlMask",
       "boss": "stormBeads"
     },
     "talentMaterials": {
       "talentBook": "elegance",
-      "mob": "mask",
+      "mob": "hilichurlMask",
       "bigBoss": "ashenHeart",
       "crown": "crownOfInsight"
     }
@@ -373,12 +373,12 @@
     "ascensionMaterials": {
       "gem": "electroGem",
       "natural": "nakuWeed",
-      "mob": "specter",
+      "mob": "spectralCore",
       "boss": "juvenileJade"
     },
     "talentMaterials": {
       "talentBook": "elegance",
-      "mob": "specter",
+      "mob": "spectralCore",
       "bigBoss": "tearsOfTheCalamitousGod",
       "crown": "crownOfInsight"
     }
@@ -389,12 +389,12 @@
     "ascensionMaterials": {
       "gem": "electroGem",
       "natural": "valberry",
-      "mob": "slime",
+      "mob": "slimeSlime",
       "boss": "lightningPrism"
     },
     "talentMaterials": {
       "talentBook": "ballad",
-      "mob": "slime",
+      "mob": "slimeSlime",
       "bigBoss": "dvalinsClaw",
       "crown": "crownOfInsight"
     }
@@ -437,12 +437,12 @@
     "ascensionMaterials": {
       "gem": "geoGem",
       "natural": "valberry",
-      "mob": "mask",
+      "mob": "hilichurlMask",
       "boss": "basaltPillar"
     },
     "talentMaterials": {
       "talentBook": "resistance",
-      "mob": "mask",
+      "mob": "hilichurlMask",
       "bigBoss": "dvalinsClaw",
       "crown": "crownOfInsight"
     }
@@ -453,12 +453,12 @@
     "ascensionMaterials": {
       "gem": "cryoGem",
       "natural": "violetgrass",
-      "mob": "scroll",
+      "mob": "samachurlScroll",
       "boss": "hoarfrostCore"
     },
     "talentMaterials": {
       "talentBook": "prosperity",
-      "mob": "scroll",
+      "mob": "samachurlScroll",
       "bigBoss": "tailOfBoreas",
       "crown": "crownOfInsight"
     }
@@ -469,12 +469,12 @@
     "ascensionMaterials": {
       "gem": "electroGem",
       "natural": "amakumoFruit",
-      "mob": "handguard",
+      "mob": "nobushiHandguard",
       "boss": "stormBeads"
     },
     "talentMaterials": {
       "talentBook": "light",
-      "mob": "handguard",
+      "mob": "nobushiHandguard",
       "bigBoss": "moltenMoment",
       "crown": "crownOfInsight"
     }
@@ -485,12 +485,12 @@
     "ascensionMaterials": {
       "gem": "electroGem",
       "natural": "wolfhook",
-      "mob": "mask",
+      "mob": "hilichurlMask",
       "boss": "lightningPrism"
     },
     "talentMaterials": {
       "talentBook": "resistance",
-      "mob": "mask",
+      "mob": "hilichurlMask",
       "bigBoss": "dvalinsClaw",
       "crown": "crownOfInsight"
     }
@@ -517,12 +517,12 @@
     "ascensionMaterials": {
       "gem": "hydroGem",
       "natural": "sangoPearl",
-      "mob": "specter",
+      "mob": "spectralCore",
       "boss": "dewOfRepudiation"
     },
     "talentMaterials": {
       "talentBook": "transience",
-      "mob": "specter",
+      "mob": "spectralCore",
       "bigBoss": "hellfireButterfly",
       "crown": "crownOfInsight"
     }
@@ -565,12 +565,12 @@
     "ascensionMaterials": {
       "gem": "anemoGem",
       "natural": "onikabuto",
-      "mob": "ravenInsignia",
+      "mob": "treasureHoarderInsignia",
       "boss": "runicFang"
     },
     "talentMaterials": {
       "talentBook": "transience",
-      "mob": "ravenInsignia",
+      "mob": "treasureHoarderInsignia",
       "bigBoss": "theMeaningOfAeons",
       "crown": "crownOfInsight"
     }
@@ -613,12 +613,12 @@
     "ascensionMaterials": {
       "gem": "pyroGem",
       "natural": "fluorescentFungus",
-      "mob": "ravenInsignia",
+      "mob": "treasureHoarderInsignia",
       "boss": "smolderingPearl"
     },
     "talentMaterials": {
       "talentBook": "transience",
-      "mob": "ravenInsignia",
+      "mob": "treasureHoarderInsignia",
       "bigBoss": "hellfireButterfly",
       "crown": "crownOfInsight"
     }
@@ -629,11 +629,11 @@
     "ascensionMaterials": {
       "gem": "diamondGem",
       "natural": "windwheelAster",
-      "mob": "mask"
+      "mob": "hilichurlMask"
     },
     "talentMaterials": {
       "talentBook": "ballad",
-      "mob": "scroll",
+      "mob": "samachurlScroll",
       "bigBoss": "dvalinsSigh",
       "crown": "crownOfInsight"
     }
@@ -644,11 +644,11 @@
     "ascensionMaterials": {
       "gem": "diamondGem",
       "natural": "windwheelAster",
-      "mob": "mask"
+      "mob": "hilichurlMask"
     },
     "talentMaterials": {
       "talentBook": "prosperity",
-      "mob": "arrow",
+      "mob": "hilichurlArrowhead",
       "bigBoss": "tailOfBoreas",
       "crown": "crownOfInsight"
     }
@@ -659,11 +659,11 @@
     "ascensionMaterials": {
       "gem": "diamondGem",
       "natural": "windwheelAster",
-      "mob": "mask"
+      "mob": "hilichurlMask"
     },
     "talentMaterials": {
       "talentBook": "transience",
-      "mob": "handguard",
+      "mob": "nobushiHandguard",
       "bigBoss": "dragonLordsCrown",
       "crown": "crownOfInsight"
     }
@@ -674,11 +674,11 @@
     "ascensionMaterials": {
       "gem": "diamondGem",
       "natural": "windwheelAster",
-      "mob": "mask"
+      "mob": "hilichurlMask"
     },
     "talentMaterials": {
       "talentBook": "admonition",
-      "mob": "fungalSpore",
+      "mob": "fungalSporePowder",
       "bigBoss": "mudraOfTheMaleficGeneral",
       "crown": "crownOfInsight"
     }
@@ -689,12 +689,12 @@
     "ascensionMaterials": {
       "gem": "anemoGem",
       "natural": "cecilia",
-      "mob": "slime",
+      "mob": "slimeSlime",
       "boss": "hurricaneSeed"
     },
     "talentMaterials": {
       "talentBook": "ballad",
-      "mob": "slime",
+      "mob": "slimeSlime",
       "bigBoss": "tailOfBoreas",
       "crown": "crownOfInsight"
     }
@@ -705,12 +705,12 @@
     "ascensionMaterials": {
       "gem": "pyroGem",
       "natural": "jueyunChili",
-      "mob": "slime",
+      "mob": "slimeSlime",
       "boss": "everflameSeed"
     },
     "talentMaterials": {
       "talentBook": "diligence",
-      "mob": "slime",
+      "mob": "slimeSlime",
       "bigBoss": "dvalinsClaw",
       "crown": "crownOfInsight"
     }
@@ -721,12 +721,12 @@
     "ascensionMaterials": {
       "gem": "anemoGem",
       "natural": "qingxin",
-      "mob": "slime",
+      "mob": "slimeSlime",
       "boss": "juvenileJade"
     },
     "talentMaterials": {
       "talentBook": "prosperity",
-      "mob": "slime",
+      "mob": "slimeSlime",
       "bigBoss": "shadowOfTheWarrior",
       "crown": "crownOfInsight"
     }
@@ -737,12 +737,12 @@
     "ascensionMaterials": {
       "gem": "hydroGem",
       "natural": "silkFlower",
-      "mob": "mask",
+      "mob": "hilichurlMask",
       "boss": "cleansingHeart"
     },
     "talentMaterials": {
       "talentBook": "gold",
-      "mob": "mask",
+      "mob": "hilichurlMask",
       "bigBoss": "tailOfBoreas",
       "crown": "crownOfInsight"
     }
@@ -753,12 +753,12 @@
     "ascensionMaterials": {
       "gem": "pyroGem",
       "natural": "violetgrass",
-      "mob": "ravenInsignia",
+      "mob": "treasureHoarderInsignia",
       "boss": "everflameSeed"
     },
     "talentMaterials": {
       "talentBook": "gold",
-      "mob": "ravenInsignia",
+      "mob": "treasureHoarderInsignia",
       "bigBoss": "tuskOfMonocerosCaeli",
       "crown": "crownOfInsight"
     }
@@ -769,12 +769,12 @@
     "ascensionMaterials": {
       "gem": "electroGem",
       "natural": "seaGanoderma",
-      "mob": "handguard",
+      "mob": "nobushiHandguard",
       "boss": "dragonheirsFalseFin"
     },
     "talentMaterials": {
       "talentBook": "light",
-      "mob": "handguard",
+      "mob": "nobushiHandguard",
       "bigBoss": "theMeaningOfAeons",
       "crown": "crownOfInsight"
     }
@@ -785,12 +785,12 @@
     "ascensionMaterials": {
       "gem": "pyroGem",
       "natural": "noctilucousJade",
-      "mob": "ravenInsignia",
+      "mob": "treasureHoarderInsignia",
       "boss": "juvenileJade"
     },
     "talentMaterials": {
       "talentBook": "gold",
-      "mob": "ravenInsignia",
+      "mob": "treasureHoarderInsignia",
       "bigBoss": "bloodjadeBranch",
       "crown": "crownOfInsight"
     }
@@ -817,12 +817,12 @@
     "ascensionMaterials": {
       "gem": "pyroGem",
       "natural": "nakuWeed",
-      "mob": "scroll",
+      "mob": "samachurlScroll",
       "boss": "smolderingPearl"
     },
     "talentMaterials": {
       "talentBook": "transience",
-      "mob": "scroll",
+      "mob": "samachurlScroll",
       "bigBoss": "dragonLordsCrown",
       "crown": "crownOfInsight"
     }
@@ -833,12 +833,12 @@
     "ascensionMaterials": {
       "gem": "geoGem",
       "natural": "glazeLily",
-      "mob": "mask",
+      "mob": "hilichurlMask",
       "boss": "riftbornRegalia"
     },
     "talentMaterials": {
       "talentBook": "diligence",
-      "mob": "mask",
+      "mob": "hilichurlMask",
       "bigBoss": "ashenHeart",
       "crown": "crownOfInsight"
     }
@@ -865,12 +865,12 @@
     "ascensionMaterials": {
       "gem": "dendroGem",
       "natural": "nilotpalaLotus",
-      "mob": "fungalSpore",
+      "mob": "fungalSporePowder",
       "boss": "majesticHookedBeak"
     },
     "talentMaterials": {
       "talentBook": "admonition",
-      "mob": "fungalSpore",
+      "mob": "fungalSporePowder",
       "bigBoss": "theMeaningOfAeons",
       "crown": "crownOfInsight"
     }
@@ -881,12 +881,12 @@
     "ascensionMaterials": {
       "gem": "dendroGem",
       "natural": "rukkhashavaMushrooms",
-      "mob": "arrow",
+      "mob": "hilichurlArrowhead",
       "boss": "majesticHookedBeak"
     },
     "talentMaterials": {
       "talentBook": "praxis",
-      "mob": "arrow",
+      "mob": "hilichurlArrowhead",
       "bigBoss": "tearsOfTheCalamitousGod",
       "crown": "crownOfInsight"
     }
