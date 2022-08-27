@@ -8,6 +8,8 @@
 
 	// console.clear()
 
+	//@ts-expect-error
+	const version = __version__
 	let layoutToShow = 'characters'
 	// let layoutToShow = 'ressources'
 
@@ -27,7 +29,7 @@
 		<Ressources />
 	{/if}
 
-	<app-version>3.0.2</app-version>
+	<app-version>{version}</app-version>
 </main>
 
 <style>
