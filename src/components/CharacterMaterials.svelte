@@ -100,9 +100,12 @@
 		}
 
 		materialsDisplay = materialsDisplay.sort((a, b) => {
-			let weights = ['gem', 'mob', 'talentBook', 'boss', 'bigBoss', 'natural']
+			let weights = ['gem', 'mob', 'talentBook', 'talentBook_crownOfInsight', 'boss', 'bigBoss', 'natural']
 
-			return weights.indexOf(a.type.split('_')[0]) - weights.indexOf(b.type.split('_')[0])
+			let indexA = weights.indexOf(a.type) !== -1 ? weights.indexOf(a.type) : weights.indexOf(a.type.split('_')[0])
+			let indexB = weights.indexOf(b.type) !== -1 ? weights.indexOf(b.type) : weights.indexOf(b.type.split('_')[0])
+
+			return indexA - indexB
 		})
 	}
 

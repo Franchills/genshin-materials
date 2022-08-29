@@ -12,8 +12,16 @@ export type AscensionMaterialsType = {
 	boss?: string
 }
 
-export type TalentMaterialsType = {
-	talent?: string
-	mob?: string
-	boss?: string
-}
+export type TalentMaterialsType = [
+	{
+		type: string[]
+		materials: [
+			{
+				talentBook: string
+				mob: string
+				bigBoss: string
+				crown: string
+			}
+		]
+	}
+]

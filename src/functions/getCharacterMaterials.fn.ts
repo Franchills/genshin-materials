@@ -1,4 +1,4 @@
-import type { CharacterType } from '../types/character.type'
+import type { CharacterType, TalentMaterialsType } from '../types/character.type'
 import type { MaterialsType } from '../types/materials.type'
 
 export default function (
@@ -17,9 +17,18 @@ export default function (
 
 		let allMaterials = [
 			mergeAscensionMaterials(character, levelsRequired),
-			mergeTalentsMaterials(character, talentsRequired.normalAttack),
-			mergeTalentsMaterials(character, talentsRequired.skill),
-			mergeTalentsMaterials(character, talentsRequired.burst)
+			mergeTalentsMaterials(
+				character.talentMaterials.find(talent => talent.type.includes('normalAttack')),
+				talentsRequired.normalAttack
+			),
+			mergeTalentsMaterials(
+				character.talentMaterials.find(talent => talent.type.includes('skill')),
+				talentsRequired.skill
+			),
+			mergeTalentsMaterials(
+				character.talentMaterials.find(talent => talent.type.includes('burst')),
+				talentsRequired.burst
+			)
 		]
 
 		allMaterials.forEach(materialGroup => {
@@ -69,15 +78,22 @@ function getPhaseValueFromLevel(value) {
 	}
 }
 
-function mergeTalentsMaterials(character, talentsRequiredValue) {
+function mergeTalentsMaterials(talentsMaterials: any, talentsRequiredValue) {
 	let materials: MaterialsType = {}
 
 	for (let i = talentsRequiredValue[0] + 1; i <= talentsRequiredValue[1]; i++) {
 		let talent = talents.find(tal => tal.lvl === i)
 
+		let characterTalentMaterial
+		if (talentsMaterials.materials.length === 1) {
+			characterTalentMaterial = talentsMaterials.materials[0]
+		} else {
+			characterTalentMaterial = talentsMaterials.materials[talent.lvl - 2]
+		}
+
 		for (let talentType in talent?.materials) {
 			let talentMaterial = talent.materials[talentType]
-			let characterMaterial = character.talentMaterials[talentType]
+			let characterMaterial = characterTalentMaterial[talentType]
 
 			let material = materials[`${talentType}_${characterMaterial}`]
 

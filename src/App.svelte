@@ -14,7 +14,7 @@
 	// let layoutToShow = 'ressources'
 
 	onMount(() => {
-		$charactersStore = charaterData
+		$charactersStore = charaterData as any
 	})
 </script>
 
@@ -29,11 +29,14 @@
 		<Ressources />
 	{/if}
 
-	<app-version>{version}</app-version>
+	<a href="https://github.com/Franchills/genshin-materials/blob/master/CHANGELOG.md" target="_blank">
+		<app-version>{version} <change-log>?</change-log></app-version>
+	</a>
 </main>
 
 <style>
 	app-version {
+		display: flex;
 		position: fixed;
 		bottom: 0;
 		right: 0;
@@ -44,7 +47,25 @@
 		border-radius: 50px;
 		font-weight: 700;
 
+		padding-right: 6px;
+
+		align-items: center;
+		justify-content: center;
+
+		cursor: pointer;
+
 		animation: cycleColor 600s infinite;
+	}
+
+	change-log {
+		border: 3px solid #fff;
+		border-radius: 50px;
+		height: 24px;
+		width: 24px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: 0.5rem;
 	}
 
 	@keyframes cycleColor {

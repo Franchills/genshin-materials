@@ -1,5 +1,296 @@
 [
   {
+    "id": "travelerAnemo",
+    "name": "Traveler Anemo",
+    "ascensionMaterials": {
+      "gem": "diamondGem",
+      "natural": "windwheelAster",
+      "mob": "hilichurlMask"
+    },
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "freedom",
+            "mob": "samachurlScroll"
+          },
+          {
+            "talentBook": "resistance",
+            "mob": "samachurlScroll"
+          },
+          {
+            "talentBook": "ballad",
+            "mob": "samachurlScroll"
+          },
+          {
+            "talentBook": "freedom",
+            "mob": "samachurlScroll"
+          },
+          {
+            "talentBook": "resistance",
+            "mob": "samachurlScroll"
+          },
+          {
+            "talentBook": "ballad",
+            "mob": "samachurlScroll",
+            "bigBoss": "dvalinsSigh"
+          },
+          {
+            "talentBook": "freedom",
+            "mob": "samachurlScroll",
+            "bigBoss": "dvalinsSigh"
+          },
+          {
+            "talentBook": "resistance",
+            "mob": "samachurlScroll",
+            "bigBoss": "dvalinsSigh"
+          },
+          {
+            "talentBook": "ballad",
+            "mob": "samachurlScroll",
+            "bigBoss": "dvalinsSigh",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "travelerGeo",
+    "name": "Traveler Geo",
+    "ascensionMaterials": {
+      "gem": "diamondGem",
+      "natural": "windwheelAster",
+      "mob": "hilichurlMask"
+    },
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack"
+        ],
+        "materials": [
+          {
+            "talentBook": "freedom",
+            "mob": "samachurlScroll"
+          },
+          {
+            "talentBook": "resistance",
+            "mob": "samachurlScroll"
+          },
+          {
+            "talentBook": "ballad",
+            "mob": "samachurlScroll"
+          },
+          {
+            "talentBook": "freedom",
+            "mob": "samachurlScroll"
+          },
+          {
+            "talentBook": "resistance",
+            "mob": "samachurlScroll"
+          },
+          {
+            "talentBook": "ballad",
+            "mob": "samachurlScroll",
+            "bigBoss": "dvalinsSigh"
+          },
+          {
+            "talentBook": "freedom",
+            "mob": "samachurlScroll",
+            "bigBoss": "dvalinsSigh"
+          },
+          {
+            "talentBook": "resistance",
+            "mob": "samachurlScroll",
+            "bigBoss": "dvalinsSigh"
+          },
+          {
+            "talentBook": "ballad",
+            "mob": "samachurlScroll",
+            "bigBoss": "dvalinsSigh",
+            "crown": "crownOfInsight"
+          }
+        ]
+      },
+      {
+        "type": [
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "prosperity",
+            "mob": "hilichurlArrowhead"
+          },
+          {
+            "talentBook": "diligence",
+            "mob": "hilichurlArrowhead"
+          },
+          {
+            "talentBook": "gold",
+            "mob": "hilichurlArrowhead"
+          },
+          {
+            "talentBook": "prosperity",
+            "mob": "hilichurlArrowhead"
+          },
+          {
+            "talentBook": "diligence",
+            "mob": "hilichurlArrowhead"
+          },
+          {
+            "talentBook": "gold",
+            "mob": "hilichurlArrowhead",
+            "bigBoss": "tailOfBoreas"
+          },
+          {
+            "talentBook": "prosperity",
+            "mob": "hilichurlArrowhead",
+            "bigBoss": "tailOfBoreas"
+          },
+          {
+            "talentBook": "diligence",
+            "mob": "hilichurlArrowhead",
+            "bigBoss": "tailOfBoreas"
+          },
+          {
+            "talentBook": "gold",
+            "mob": "hilichurlArrowhead",
+            "bigBoss": "tailOfBoreas",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "travelerElectro",
+    "name": "Traveler Electro",
+    "ascensionMaterials": {
+      "gem": "diamondGem",
+      "natural": "windwheelAster",
+      "mob": "hilichurlMask"
+    },
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "transience",
+            "mob": "nobushiHandguard"
+          },
+          {
+            "talentBook": "elegance",
+            "mob": "nobushiHandguard"
+          },
+          {
+            "talentBook": "light",
+            "mob": "nobushiHandguard"
+          },
+          {
+            "talentBook": "transience",
+            "mob": "nobushiHandguard"
+          },
+          {
+            "talentBook": "elegance",
+            "mob": "nobushiHandguard"
+          },
+          {
+            "talentBook": "light",
+            "mob": "nobushiHandguard",
+            "bigBoss": "dragonLordsCrown"
+          },
+          {
+            "talentBook": "transience",
+            "mob": "nobushiHandguard",
+            "bigBoss": "dragonLordsCrown"
+          },
+          {
+            "talentBook": "elegance",
+            "mob": "nobushiHandguard",
+            "bigBoss": "dragonLordsCrown"
+          },
+          {
+            "talentBook": "light",
+            "mob": "nobushiHandguard",
+            "bigBoss": "dragonLordsCrown",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "travelerDendro",
+    "name": "Traveler Dendro",
+    "ascensionMaterials": {
+      "gem": "diamondGem",
+      "natural": "windwheelAster",
+      "mob": "hilichurlMask"
+    },
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "admonition",
+            "mob": "fungalSporePowder"
+          },
+          {
+            "talentBook": "ingenuity",
+            "mob": "fungalSporePowder"
+          },
+          {
+            "talentBook": "praxis",
+            "mob": "fungalSporePowder"
+          },
+          {
+            "talentBook": "admonition",
+            "mob": "fungalSporePowder"
+          },
+          {
+            "talentBook": "ingenuity",
+            "mob": "fungalSporePowder"
+          },
+          {
+            "talentBook": "praxis",
+            "mob": "fungalSporePowder",
+            "bigBoss": "mudraOfTheMaleficGeneral"
+          },
+          {
+            "talentBook": "admonition",
+            "mob": "fungalSporePowder",
+            "bigBoss": "mudraOfTheMaleficGeneral"
+          },
+          {
+            "talentBook": "ingenuity",
+            "mob": "fungalSporePowder",
+            "bigBoss": "mudraOfTheMaleficGeneral"
+          },
+          {
+            "talentBook": "praxis",
+            "mob": "fungalSporePowder",
+            "bigBoss": "mudraOfTheMaleficGeneral",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "albedo",
     "name": "Albedo",
     "ascensionMaterials": {
@@ -8,12 +299,23 @@
       "mob": "samachurlScroll",
       "boss": "basaltPillar"
     },
-    "talentMaterials": {
-      "talentBook": "ballad",
-      "mob": "samachurlScroll",
-      "bigBoss": "tuskOfMonocerosCaeli",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "ballad",
+            "mob": "samachurlScroll",
+            "bigBoss": "tuskOfMonocerosCaeli",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "aloy",
@@ -24,12 +326,23 @@
       "mob": "spectralCore",
       "boss": "crystallineBloom"
     },
-    "talentMaterials": {
-      "talentBook": "freedom",
-      "mob": "spectralCore",
-      "bigBoss": "moltenMoment",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "freedom",
+            "mob": "spectralCore",
+            "bigBoss": "moltenMoment",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "amber",
@@ -40,12 +353,23 @@
       "mob": "hilichurlArrowhead",
       "boss": "everflameSeed"
     },
-    "talentMaterials": {
-      "talentBook": "freedom",
-      "mob": "hilichurlArrowhead",
-      "bigBoss": "dvalinsSigh",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "freedom",
+            "mob": "hilichurlArrowhead",
+            "bigBoss": "dvalinsSigh",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "aratakiItto",
@@ -56,12 +380,23 @@
       "mob": "slimeSlime",
       "boss": "riftbornRegalia"
     },
-    "talentMaterials": {
-      "talentBook": "elegance",
-      "mob": "slimeSlime",
-      "bigBoss": "ashenHeart",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "elegance",
+            "mob": "slimeSlime",
+            "bigBoss": "ashenHeart",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "barbara",
@@ -72,12 +407,23 @@
       "mob": "samachurlScroll",
       "boss": "cleansingHeart"
     },
-    "talentMaterials": {
-      "talentBook": "freedom",
-      "mob": "samachurlScroll",
-      "bigBoss": "ringOfBoreas",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "freedom",
+            "mob": "samachurlScroll",
+            "bigBoss": "ringOfBoreas",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "beidou",
@@ -88,12 +434,23 @@
       "mob": "treasureHoarderInsignia",
       "boss": "juvenileJade"
     },
-    "talentMaterials": {
-      "talentBook": "gold",
-      "mob": "treasureHoarderInsignia",
-      "bigBoss": "dvalinsSigh",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "gold",
+            "mob": "treasureHoarderInsignia",
+            "bigBoss": "dvalinsSigh",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "bennett",
@@ -104,12 +461,23 @@
       "mob": "treasureHoarderInsignia",
       "boss": "everflameSeed"
     },
-    "talentMaterials": {
-      "talentBook": "resistance",
-      "mob": "treasureHoarderInsignia",
-      "bigBoss": "dvalinsPlume",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "resistance",
+            "mob": "treasureHoarderInsignia",
+            "bigBoss": "dvalinsPlume",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "chongyun",
@@ -120,12 +488,23 @@
       "mob": "hilichurlMask",
       "boss": "hoarfrostCore"
     },
-    "talentMaterials": {
-      "talentBook": "diligence",
-      "mob": "hilichurlMask",
-      "bigBoss": "dvalinsSigh",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "diligence",
+            "mob": "hilichurlMask",
+            "bigBoss": "dvalinsSigh",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "diluc",
@@ -136,12 +515,23 @@
       "mob": "fatuiInsignia",
       "boss": "everflameSeed"
     },
-    "talentMaterials": {
-      "talentBook": "resistance",
-      "mob": "fatuiInsignia",
-      "bigBoss": "dvalinsPlume",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "resistance",
+            "mob": "fatuiInsignia",
+            "bigBoss": "dvalinsPlume",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "diona",
@@ -152,12 +542,23 @@
       "mob": "hilichurlArrowhead",
       "boss": "hoarfrostCore"
     },
-    "talentMaterials": {
-      "talentBook": "freedom",
-      "mob": "hilichurlArrowhead",
-      "bigBoss": "shardOfAFoulLegacy",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "freedom",
+            "mob": "hilichurlArrowhead",
+            "bigBoss": "shardOfAFoulLegacy",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "eula",
@@ -168,12 +569,23 @@
       "mob": "hilichurlMask",
       "boss": "crystallineBloom"
     },
-    "talentMaterials": {
-      "talentBook": "resistance",
-      "mob": "hilichurlMask",
-      "bigBoss": "dragonLordsCrown",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "resistance",
+            "mob": "hilichurlMask",
+            "bigBoss": "dragonLordsCrown",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "fischl",
@@ -184,12 +596,23 @@
       "mob": "hilichurlArrowhead",
       "boss": "lightningPrism"
     },
-    "talentMaterials": {
-      "talentBook": "ballad",
-      "mob": "hilichurlArrowhead",
-      "bigBoss": "spiritLocketOfBoreas",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "ballad",
+            "mob": "hilichurlArrowhead",
+            "bigBoss": "spiritLocketOfBoreas",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "ganyu",
@@ -200,12 +623,23 @@
       "mob": "whopperflowerNectar",
       "boss": "hoarfrostCore"
     },
-    "talentMaterials": {
-      "talentBook": "diligence",
-      "mob": "whopperflowerNectar",
-      "bigBoss": "shadowOfTheWarrior",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "diligence",
+            "mob": "whopperflowerNectar",
+            "bigBoss": "shadowOfTheWarrior",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "gorou",
@@ -216,12 +650,23 @@
       "mob": "spectralCore",
       "boss": "juvenileJade"
     },
-    "talentMaterials": {
-      "talentBook": "light",
-      "mob": "spectralCore",
-      "bigBoss": "moltenMoment",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "light",
+            "mob": "spectralCore",
+            "bigBoss": "moltenMoment",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "huTao",
@@ -232,12 +677,23 @@
       "mob": "whopperflowerNectar",
       "boss": "juvenileJade"
     },
-    "talentMaterials": {
-      "talentBook": "diligence",
-      "mob": "whopperflowerNectar",
-      "bigBoss": "shardOfAFoulLegacy",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "diligence",
+            "mob": "whopperflowerNectar",
+            "bigBoss": "shardOfAFoulLegacy",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "jean",
@@ -248,12 +704,23 @@
       "mob": "hilichurlMask",
       "boss": "hurricaneSeed"
     },
-    "talentMaterials": {
-      "talentBook": "resistance",
-      "mob": "hilichurlMask",
-      "bigBoss": "dvalinsPlume",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "resistance",
+            "mob": "hilichurlMask",
+            "bigBoss": "dvalinsPlume",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "kaedeharaKazuha",
@@ -264,12 +731,23 @@
       "mob": "treasureHoarderInsignia",
       "boss": "marionetteCore"
     },
-    "talentMaterials": {
-      "talentBook": "diligence",
-      "mob": "treasureHoarderInsignia",
-      "bigBoss": "gildedScale",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "diligence",
+            "mob": "treasureHoarderInsignia",
+            "bigBoss": "gildedScale",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "kaeya",
@@ -280,12 +758,23 @@
       "mob": "treasureHoarderInsignia",
       "boss": "hoarfrostCore"
     },
-    "talentMaterials": {
-      "talentBook": "ballad",
-      "mob": "treasureHoarderInsignia",
-      "bigBoss": "spiritLocketOfBoreas",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "ballad",
+            "mob": "treasureHoarderInsignia",
+            "bigBoss": "spiritLocketOfBoreas",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "kamisatoAyaka",
@@ -296,12 +785,23 @@
       "mob": "nobushiHandguard",
       "boss": "perpetualHeart"
     },
-    "talentMaterials": {
-      "talentBook": "elegance",
-      "mob": "nobushiHandguard",
-      "bigBoss": "bloodjadeBranch",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "elegance",
+            "mob": "nobushiHandguard",
+            "bigBoss": "bloodjadeBranch",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "kamisatoAyato",
@@ -312,12 +812,23 @@
       "mob": "nobushiHandguard",
       "boss": "dewOfRepudiation"
     },
-    "talentMaterials": {
-      "talentBook": "elegance",
-      "mob": "nobushiHandguard",
-      "bigBoss": "mudraOfTheMaleficGeneral",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "elegance",
+            "mob": "nobushiHandguard",
+            "bigBoss": "mudraOfTheMaleficGeneral",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "keqing",
@@ -328,12 +839,23 @@
       "mob": "whopperflowerNectar",
       "boss": "lightningPrism"
     },
-    "talentMaterials": {
-      "talentBook": "prosperity",
-      "mob": "whopperflowerNectar",
-      "bigBoss": "ringOfBoreas",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "prosperity",
+            "mob": "whopperflowerNectar",
+            "bigBoss": "ringOfBoreas",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "klee",
@@ -344,12 +866,23 @@
       "mob": "samachurlScroll",
       "boss": "everflameSeed"
     },
-    "talentMaterials": {
-      "talentBook": "freedom",
-      "mob": "samachurlScroll",
-      "bigBoss": "ringOfBoreas",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "freedom",
+            "mob": "samachurlScroll",
+            "bigBoss": "ringOfBoreas",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "kujouSara",
@@ -360,12 +893,23 @@
       "mob": "hilichurlMask",
       "boss": "stormBeads"
     },
-    "talentMaterials": {
-      "talentBook": "elegance",
-      "mob": "hilichurlMask",
-      "bigBoss": "ashenHeart",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "elegance",
+            "mob": "hilichurlMask",
+            "bigBoss": "ashenHeart",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "kukiShinobu",
@@ -376,12 +920,23 @@
       "mob": "spectralCore",
       "boss": "juvenileJade"
     },
-    "talentMaterials": {
-      "talentBook": "elegance",
-      "mob": "spectralCore",
-      "bigBoss": "tearsOfTheCalamitousGod",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "elegance",
+            "mob": "spectralCore",
+            "bigBoss": "tearsOfTheCalamitousGod",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "lisa",
@@ -392,12 +947,23 @@
       "mob": "slimeSlime",
       "boss": "lightningPrism"
     },
-    "talentMaterials": {
-      "talentBook": "ballad",
-      "mob": "slimeSlime",
-      "bigBoss": "dvalinsClaw",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "ballad",
+            "mob": "slimeSlime",
+            "bigBoss": "dvalinsClaw",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "mona",
@@ -408,12 +974,23 @@
       "mob": "whopperflowerNectar",
       "boss": "cleansingHeart"
     },
-    "talentMaterials": {
-      "talentBook": "resistance",
-      "mob": "whopperflowerNectar",
-      "bigBoss": "ringOfBoreas",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "resistance",
+            "mob": "whopperflowerNectar",
+            "bigBoss": "ringOfBoreas",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "ningguang",
@@ -424,12 +1001,23 @@
       "mob": "fatuiInsignia",
       "boss": "basaltPillar"
     },
-    "talentMaterials": {
-      "talentBook": "prosperity",
-      "mob": "fatuiInsignia",
-      "bigBoss": "spiritLocketOfBoreas",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "prosperity",
+            "mob": "fatuiInsignia",
+            "bigBoss": "spiritLocketOfBoreas",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "noelle",
@@ -440,12 +1028,23 @@
       "mob": "hilichurlMask",
       "boss": "basaltPillar"
     },
-    "talentMaterials": {
-      "talentBook": "resistance",
-      "mob": "hilichurlMask",
-      "bigBoss": "dvalinsClaw",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "resistance",
+            "mob": "hilichurlMask",
+            "bigBoss": "dvalinsClaw",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qiqi",
@@ -456,12 +1055,23 @@
       "mob": "samachurlScroll",
       "boss": "hoarfrostCore"
     },
-    "talentMaterials": {
-      "talentBook": "prosperity",
-      "mob": "samachurlScroll",
-      "bigBoss": "tailOfBoreas",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "prosperity",
+            "mob": "samachurlScroll",
+            "bigBoss": "tailOfBoreas",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "raidenShogun",
@@ -472,12 +1082,23 @@
       "mob": "nobushiHandguard",
       "boss": "stormBeads"
     },
-    "talentMaterials": {
-      "talentBook": "light",
-      "mob": "nobushiHandguard",
-      "bigBoss": "moltenMoment",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "light",
+            "mob": "nobushiHandguard",
+            "bigBoss": "moltenMoment",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "razor",
@@ -488,12 +1109,23 @@
       "mob": "hilichurlMask",
       "boss": "lightningPrism"
     },
-    "talentMaterials": {
-      "talentBook": "resistance",
-      "mob": "hilichurlMask",
-      "bigBoss": "dvalinsClaw",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "resistance",
+            "mob": "hilichurlMask",
+            "bigBoss": "dvalinsClaw",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "rosaria",
@@ -504,12 +1136,23 @@
       "mob": "fatuiInsignia",
       "boss": "hoarfrostCore"
     },
-    "talentMaterials": {
-      "talentBook": "ballad",
-      "mob": "fatuiInsignia",
-      "bigBoss": "shadowOfTheWarrior",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "ballad",
+            "mob": "fatuiInsignia",
+            "bigBoss": "shadowOfTheWarrior",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "sangonomiyaKokomi",
@@ -520,12 +1163,23 @@
       "mob": "spectralCore",
       "boss": "dewOfRepudiation"
     },
-    "talentMaterials": {
-      "talentBook": "transience",
-      "mob": "spectralCore",
-      "bigBoss": "hellfireButterfly",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "transience",
+            "mob": "spectralCore",
+            "bigBoss": "hellfireButterfly",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "sayu",
@@ -536,12 +1190,23 @@
       "mob": "whopperflowerNectar",
       "boss": "marionetteCore"
     },
-    "talentMaterials": {
-      "talentBook": "light",
-      "mob": "whopperflowerNectar",
-      "bigBoss": "gildedScale",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "light",
+            "mob": "whopperflowerNectar",
+            "bigBoss": "gildedScale",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "shenhe",
@@ -552,12 +1217,23 @@
       "mob": "whopperflowerNectar",
       "boss": "dragonheirsFalseFin"
     },
-    "talentMaterials": {
-      "talentBook": "prosperity",
-      "mob": "whopperflowerNectar",
-      "bigBoss": "hellfireButterfly",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "prosperity",
+            "mob": "whopperflowerNectar",
+            "bigBoss": "hellfireButterfly",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "shikanoinHeizou",
@@ -568,12 +1244,23 @@
       "mob": "treasureHoarderInsignia",
       "boss": "runicFang"
     },
-    "talentMaterials": {
-      "talentBook": "transience",
-      "mob": "treasureHoarderInsignia",
-      "bigBoss": "theMeaningOfAeons",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "transience",
+            "mob": "treasureHoarderInsignia",
+            "bigBoss": "theMeaningOfAeons",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "sucrose",
@@ -584,12 +1271,23 @@
       "mob": "whopperflowerNectar",
       "boss": "hurricaneSeed"
     },
-    "talentMaterials": {
-      "talentBook": "freedom",
-      "mob": "whopperflowerNectar",
-      "bigBoss": "spiritLocketOfBoreas",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "freedom",
+            "mob": "whopperflowerNectar",
+            "bigBoss": "spiritLocketOfBoreas",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "tartaglia",
@@ -600,12 +1298,23 @@
       "mob": "fatuiInsignia",
       "boss": "cleansingHeart"
     },
-    "talentMaterials": {
-      "talentBook": "freedom",
-      "mob": "fatuiInsignia",
-      "bigBoss": "shardOfAFoulLegacy",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "freedom",
+            "mob": "fatuiInsignia",
+            "bigBoss": "shardOfAFoulLegacy",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "thoma",
@@ -616,72 +1325,23 @@
       "mob": "treasureHoarderInsignia",
       "boss": "smolderingPearl"
     },
-    "talentMaterials": {
-      "talentBook": "transience",
-      "mob": "treasureHoarderInsignia",
-      "bigBoss": "hellfireButterfly",
-      "crown": "crownOfInsight"
-    }
-  },
-  {
-    "id": "travelerAnemo",
-    "name": "Traveler Anemo",
-    "ascensionMaterials": {
-      "gem": "diamondGem",
-      "natural": "windwheelAster",
-      "mob": "hilichurlMask"
-    },
-    "talentMaterials": {
-      "talentBook": "ballad",
-      "mob": "samachurlScroll",
-      "bigBoss": "dvalinsSigh",
-      "crown": "crownOfInsight"
-    }
-  },
-  {
-    "id": "travelerGeo",
-    "name": "Traveler Geo",
-    "ascensionMaterials": {
-      "gem": "diamondGem",
-      "natural": "windwheelAster",
-      "mob": "hilichurlMask"
-    },
-    "talentMaterials": {
-      "talentBook": "prosperity",
-      "mob": "hilichurlArrowhead",
-      "bigBoss": "tailOfBoreas",
-      "crown": "crownOfInsight"
-    }
-  },
-  {
-    "id": "travelerElectro",
-    "name": "Traveler Electro",
-    "ascensionMaterials": {
-      "gem": "diamondGem",
-      "natural": "windwheelAster",
-      "mob": "hilichurlMask"
-    },
-    "talentMaterials": {
-      "talentBook": "transience",
-      "mob": "nobushiHandguard",
-      "bigBoss": "dragonLordsCrown",
-      "crown": "crownOfInsight"
-    }
-  },
-  {
-    "id": "travelerDendro",
-    "name": "Traveler Dendro",
-    "ascensionMaterials": {
-      "gem": "diamondGem",
-      "natural": "windwheelAster",
-      "mob": "hilichurlMask"
-    },
-    "talentMaterials": {
-      "talentBook": "admonition",
-      "mob": "fungalSporePowder",
-      "bigBoss": "mudraOfTheMaleficGeneral",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "transience",
+            "mob": "treasureHoarderInsignia",
+            "bigBoss": "hellfireButterfly",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "venti",
@@ -692,12 +1352,23 @@
       "mob": "slimeSlime",
       "boss": "hurricaneSeed"
     },
-    "talentMaterials": {
-      "talentBook": "ballad",
-      "mob": "slimeSlime",
-      "bigBoss": "tailOfBoreas",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "ballad",
+            "mob": "slimeSlime",
+            "bigBoss": "tailOfBoreas",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "xiangling",
@@ -708,12 +1379,23 @@
       "mob": "slimeSlime",
       "boss": "everflameSeed"
     },
-    "talentMaterials": {
-      "talentBook": "diligence",
-      "mob": "slimeSlime",
-      "bigBoss": "dvalinsClaw",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "diligence",
+            "mob": "slimeSlime",
+            "bigBoss": "dvalinsClaw",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "xiao",
@@ -724,12 +1406,23 @@
       "mob": "slimeSlime",
       "boss": "juvenileJade"
     },
-    "talentMaterials": {
-      "talentBook": "prosperity",
-      "mob": "slimeSlime",
-      "bigBoss": "shadowOfTheWarrior",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "prosperity",
+            "mob": "slimeSlime",
+            "bigBoss": "shadowOfTheWarrior",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "xingqiu",
@@ -740,12 +1433,23 @@
       "mob": "hilichurlMask",
       "boss": "cleansingHeart"
     },
-    "talentMaterials": {
-      "talentBook": "gold",
-      "mob": "hilichurlMask",
-      "bigBoss": "tailOfBoreas",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "gold",
+            "mob": "hilichurlMask",
+            "bigBoss": "tailOfBoreas",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "xinyan",
@@ -756,12 +1460,23 @@
       "mob": "treasureHoarderInsignia",
       "boss": "everflameSeed"
     },
-    "talentMaterials": {
-      "talentBook": "gold",
-      "mob": "treasureHoarderInsignia",
-      "bigBoss": "tuskOfMonocerosCaeli",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "gold",
+            "mob": "treasureHoarderInsignia",
+            "bigBoss": "tuskOfMonocerosCaeli",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "yaeMiko",
@@ -772,12 +1487,23 @@
       "mob": "nobushiHandguard",
       "boss": "dragonheirsFalseFin"
     },
-    "talentMaterials": {
-      "talentBook": "light",
-      "mob": "nobushiHandguard",
-      "bigBoss": "theMeaningOfAeons",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "light",
+            "mob": "nobushiHandguard",
+            "bigBoss": "theMeaningOfAeons",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "yanfei",
@@ -788,12 +1514,23 @@
       "mob": "treasureHoarderInsignia",
       "boss": "juvenileJade"
     },
-    "talentMaterials": {
-      "talentBook": "gold",
-      "mob": "treasureHoarderInsignia",
-      "bigBoss": "bloodjadeBranch",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "gold",
+            "mob": "treasureHoarderInsignia",
+            "bigBoss": "bloodjadeBranch",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "yelan",
@@ -804,12 +1541,23 @@
       "mob": "fatuiInsignia",
       "boss": "runicFang"
     },
-    "talentMaterials": {
-      "talentBook": "prosperity",
-      "mob": "fatuiInsignia",
-      "bigBoss": "gildedScale",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "prosperity",
+            "mob": "fatuiInsignia",
+            "bigBoss": "gildedScale",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "yoimiya",
@@ -820,12 +1568,23 @@
       "mob": "samachurlScroll",
       "boss": "smolderingPearl"
     },
-    "talentMaterials": {
-      "talentBook": "transience",
-      "mob": "samachurlScroll",
-      "bigBoss": "dragonLordsCrown",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "transience",
+            "mob": "samachurlScroll",
+            "bigBoss": "dragonLordsCrown",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "yunJin",
@@ -836,12 +1595,23 @@
       "mob": "hilichurlMask",
       "boss": "riftbornRegalia"
     },
-    "talentMaterials": {
-      "talentBook": "diligence",
-      "mob": "hilichurlMask",
-      "bigBoss": "ashenHeart",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "diligence",
+            "mob": "hilichurlMask",
+            "bigBoss": "ashenHeart",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "zhongli",
@@ -852,12 +1622,23 @@
       "mob": "fatuiInsignia",
       "boss": "basaltPillar"
     },
-    "talentMaterials": {
-      "talentBook": "gold",
-      "mob": "fatuiInsignia",
-      "bigBoss": "tuskOfMonocerosCaeli",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "gold",
+            "mob": "fatuiInsignia",
+            "bigBoss": "tuskOfMonocerosCaeli",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "tighnari",
@@ -868,12 +1649,23 @@
       "mob": "fungalSporePowder",
       "boss": "majesticHookedBeak"
     },
-    "talentMaterials": {
-      "talentBook": "admonition",
-      "mob": "fungalSporePowder",
-      "bigBoss": "theMeaningOfAeons",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "admonition",
+            "mob": "fungalSporePowder",
+            "bigBoss": "theMeaningOfAeons",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "collei",
@@ -884,11 +1676,22 @@
       "mob": "hilichurlArrowhead",
       "boss": "majesticHookedBeak"
     },
-    "talentMaterials": {
-      "talentBook": "praxis",
-      "mob": "hilichurlArrowhead",
-      "bigBoss": "tearsOfTheCalamitousGod",
-      "crown": "crownOfInsight"
-    }
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "praxis",
+            "mob": "hilichurlArrowhead",
+            "bigBoss": "tearsOfTheCalamitousGod",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   }
 ]
