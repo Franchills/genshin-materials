@@ -95,8 +95,16 @@
 
 	character-select select {
 		margin-right: 1rem;
+		color: var(--color-fg);
+		background-color: var(--color-bg);
+		border: var(--border-style);
 	}
 	character-select button {
 		margin-left: 1rem;
+
+		color: var(--color-fg);
+		background-color: var(--color-bg);
+
+		border: var(--border-style);
 	}
 </style>

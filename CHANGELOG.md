@@ -1,5 +1,10 @@
 # Changelog
 
+## [3.0.7] - 2022-08-29
+### Improvements
+  - Added better visual for the current selected tab.
+### Fixes
+ - Fixed Dark Theme.
 ## [3.0.6] - 2022-08-29
 ### Improvements
  - Increased material image size for readability.

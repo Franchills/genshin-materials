@@ -39,8 +39,8 @@
 	</material-image>
 	<material-amount>{materialData.amount}</material-amount>
 	<controls>
-		<shift-value on:click={() => shiftValue('down')}><ArrowDown style="height: 1.5rem;" /></shift-value>
-		<shift-value on:click={() => shiftValue('up')}><ArrowUp style="height: 1.5rem;" /></shift-value>
+		<shift-value on:click={() => shiftValue('down')}><ArrowDown style="height: 1.5rem;fill: var(--color-fg);" /></shift-value>
+		<shift-value on:click={() => shiftValue('up')}><ArrowUp style="height: 1.5rem;fill: var(--color-fg);" /></shift-value>
 	</controls>
 </material-svelte>
 
@@ -49,8 +49,9 @@
 		width: 80px;
 		display: flex;
 		flex-direction: column;
-		background-color: hsl(0, 0%, 98%);
-		border: 2px solid hsl(0, 0%, 90%);
+		color: var(--color-fg);
+		background-color: var(--color-bg);
+		border: var(--border-style);
 		padding: 0.5rem;
 	}
 

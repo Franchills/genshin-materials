@@ -64,4 +64,9 @@
 </option-select>
 
 <style>
+	select {
+		color: var(--color-fg);
+		background-color: var(--color-bg);
+		border: var(--border-style);
+	}
 </style>

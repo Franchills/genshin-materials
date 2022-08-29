@@ -339,6 +339,13 @@
 		padding: 1rem;
 	}
 
+	character-header button {
+		color: var(--color-fg);
+		background-color: var(--color-bg);
+		border: var(--border-style);
+		border-radius: 3px;
+	}
+
 	character-body {
 		display: flex;
 		flex-direction: row;

@@ -1,3 +1,13 @@
+:root {
+	--color-bg: var(--color-theme-bg);
+	--color-fg: var(--color-theme-fg);
+
+	--color-theme-bg: #f0f8ff;
+	--color-theme-fg: #000e1a;
+
+	--border-style: 2px solid hsl(0, 0%, 50%);
+}
+
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -8,6 +18,9 @@
 
 html {
 	font-family: NunitoVF;
+
+	background-color: var(--color-bg);
+	color: var(--color-fg);
 }
 
 button {
@@ -15,11 +28,8 @@ button {
 }
 
 @media (prefers-color-scheme: dark) {
-	html {
-		filter: invert(1);
-	}
-
-	img {
-		filter: invert(1);
+	:root {
+		--color-theme-bg: #000e1a;
+		--color-theme-fg: #f0f8ff;
 	}
 }

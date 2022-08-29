@@ -4,13 +4,13 @@
 	import Characters from './layout/Characters.svelte'
 	import Ressources from './layout/Ressources.svelte'
 	import Tabs from './layout/Tabs.svelte'
-	import { charactersStore } from './stores/store'
+	import { charactersStore, layoutToShow } from './stores/store'
 
 	// console.clear()
 
 	//@ts-expect-error
 	const version = __version__
-	let layoutToShow = 'characters'
+	// let layoutToShow = 'characters'
 	// let layoutToShow = 'ressources'
 
 	onMount(() => {
@@ -19,13 +19,13 @@
 </script>
 
 <main>
-	<Tabs on:changeLayout={evt => (layoutToShow = evt.detail)} />
+	<Tabs />
 
-	{#if layoutToShow === 'characters'}
+	{#if $layoutToShow === 'characters'}
 		{#if $charactersStore.length > 0}
 			<Characters />
 		{/if}
-	{:else if layoutToShow === 'ressources'}
+	{:else if $layoutToShow === 'ressources'}
 		<Ressources />
 	{/if}
 

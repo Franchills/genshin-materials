@@ -2,6 +2,7 @@
 	import { createEventDispatcher } from 'svelte'
 	import DownloadFile from '../icons/DownloadFile.svelte'
 	import UploadFile from '../icons/UploadFile.svelte'
+	import { layoutToShow } from '../stores/store'
 
 	const dispatch = createEventDispatcher()
 
@@ -49,10 +50,14 @@
 
 <input type="file" id="fileInput" accept=".json" on:change={importData} />
 <tabs-svelte>
-	<button on:click={() => dispatch('changeLayout', 'characters')}>Characters</button>
-	<button on:click={() => dispatch('changeLayout', 'ressources')}>Ressources</button>
-	<button class="small" on:click={() => exportData()}>Export Data <UploadFile style="fille:#000;height: 20px;" /> </button>
-	<button class="small" on:click={() => clickFileInput()}>Import Data <DownloadFile style="fille:#000;height: 20px;" /></button>
+	<button active={$layoutToShow === 'characters'} on:click={() => ($layoutToShow = 'characters')}>Characters</button>
+	<button active={$layoutToShow === 'ressources'} on:click={() => ($layoutToShow = 'ressources')}>Ressources</button>
+	<button class="small" on:click={() => exportData()}
+		>Export Data <UploadFile style="fill: var(--color-fg);height: 20px;margin-left: .25rem;" />
+	</button>
+	<button class="small" on:click={() => clickFileInput()}
+		>Import Data <DownloadFile style="fill: var(--color-fg);height: 20px;margin-left: .25rem;" /></button
+	>
 </tabs-svelte>
 
 <style>
@@ -69,8 +74,14 @@
 		padding: 0.5rem;
 		font-size: 1rem;
 		border-radius: 0;
-		border: solid 1px #ccc;
-		background-color: #eee;
+		color: var(--color-fg);
+		background-color: var(--color-bg);
+		border: var(--border-style);
+	}
+
+	button[active='true'] {
+		font-variation-settings: 'wght' 800;
+		font-size: 1.2rem;
 	}
 
 	button.small {
