@@ -331,7 +331,6 @@
 		width: 100%;
 		display: flex;
 		flex-direction: row;
-		/* height: 100%; */
 	}
 
 	character-header {
@@ -360,8 +359,17 @@
 		/* border-bottom: 1px solid #ddd; */
 	}
 	grid-section material {
-		padding-right: 0.75rem;
-		/* height: 100%; */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid #ddd;
+		width: 100%;
+	}
+
+	grid-section material img {
+		margin-right: 0.25rem;
+		width: 3rem;
+		height: 3rem;
 	}
 
 	grid-section material bold {
@@ -375,16 +383,10 @@
 	grid-section:nth-child(odd) {
 		background-color: hsla(0, 0%, 0%, 0.025);
 	}
-	material {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border: 1px solid #ddd;
-		width: 100%;
-	}
 
-	material img {
-		width: 2.5rem;
-		height: 2.5rem;
+	required-grid {
+		border-color: #aaa;
+		border-style: solid;
+		border-width: 0 2px 0 2px;
 	}
 </style>
