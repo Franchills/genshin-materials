@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.0.8] - 2022-08-29
+### Improvements
+  - Change main background color back to white...
 ## [3.0.7] - 2022-08-29
 ### Improvements
   - Added better visual for the current selected tab.

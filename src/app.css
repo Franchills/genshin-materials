@@ -2,7 +2,7 @@
 	--color-bg: var(--color-theme-bg);
 	--color-fg: var(--color-theme-fg);
 
-	--color-theme-bg: #f0f8ff;
+	--color-theme-bg: #ffffff;
 	--color-theme-fg: #000e1a;
 
 	--border-style: 2px solid hsl(0, 0%, 50%);
@@ -30,6 +30,6 @@ button {
 @media (prefers-color-scheme: dark) {
 	:root {
 		--color-theme-bg: #000e1a;
-		--color-theme-fg: #f0f8ff;
+		--color-theme-fg: #ffffff;
 	}
 }
