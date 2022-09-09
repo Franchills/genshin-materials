@@ -1693,5 +1693,32 @@
         ]
       }
     ]
+  },
+  {
+    "id": "dori",
+    "name": "Dori",
+    "ascensionMaterials": {
+      "gem": "electroGem",
+      "natural": "kalpalataLotus",
+      "mob": "redCloth",
+      "boss": "thunderclapFruitcore"
+    },
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "ingenuity",
+            "mob": "redCloth",
+            "bigBoss": "bloodjadeBranch",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   }
 ]

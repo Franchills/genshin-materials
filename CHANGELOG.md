@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.0.9] - 2022-09-09
+### Additions
+  - Added new character Dori.
 ## [3.0.8] - 2022-08-29
 ### Improvements
   - Change main background color back to white...

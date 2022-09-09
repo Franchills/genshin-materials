@@ -191,6 +191,12 @@
       "amount": [
         0
       ]
+    },
+    {
+      "name": "thunderclapFruitcore",
+      "amount": [
+        0
+      ]
     }
   ],
   "bigBoss": [
@@ -536,6 +542,12 @@
     },
     {
       "name": "rukkhashavaMushrooms",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "kalpalataLotus",
       "amount": [
         0
       ]

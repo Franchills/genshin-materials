@@ -45,6 +45,7 @@ export default [
 	'dragonheirsFalseFin',
 	'runicFang',
 	'majesticHookedBeak',
+	'thunderclapFruitcore',
 	'diamondGem',
 	'pyroGem',
 	'hydroGem',
@@ -92,5 +93,6 @@ export default [
 	'amakumoFruit',
 	'fluorescentFungus',
 	'nilotpalaLotus',
-	'rukkhashavaMushrooms'
+	'rukkhashavaMushrooms',
+	'kalpalataLotus'
 ]

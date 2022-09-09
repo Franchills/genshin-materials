@@ -29,7 +29,7 @@
 		<Ressources />
 	{/if}
 
-	<a href="https://github.com/Franchills/genshin-materials/blob/master/CHANGELOG.md" target="_blank">
+	<a href="https://github.com/Franchills/genshin-materials/blob/master/CHANGELOG.md#changelog" target="_blank">
 		<app-version>{version} <change-log>?</change-log></app-version>
 	</a>
 </main>
