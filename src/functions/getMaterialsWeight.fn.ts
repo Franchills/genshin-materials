@@ -46,6 +46,8 @@ export default [
 	'runicFang',
 	'majesticHookedBeak',
 	'thunderclapFruitcore',
+	'lightGuidingTetrahedron',
+	'perpetualCaliber',
 	'diamondGem',
 	'pyroGem',
 	'hydroGem',
@@ -94,5 +96,8 @@ export default [
 	'fluorescentFungus',
 	'nilotpalaLotus',
 	'rukkhashavaMushrooms',
-	'kalpalataLotus'
+	'kalpalataLotus',
+	'padisarah',
+	'scarab',
+	'redcrest'
 ]

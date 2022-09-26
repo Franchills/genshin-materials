@@ -1720,5 +1720,86 @@
         ]
       }
     ]
+  },
+  {
+    "id": "cyno",
+    "name": "Cyno",
+    "ascensionMaterials": {
+      "gem": "electroGem",
+      "natural": "scarab",
+      "mob": "samachurlScroll",
+      "boss": "thunderclapFruitcore"
+    },
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "admonition",
+            "mob": "samachurlScroll",
+            "bigBoss": "mudraOfTheMaleficGeneral",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "candace",
+    "name": "Candace",
+    "ascensionMaterials": {
+      "gem": "hydroGem",
+      "natural": "redcrest",
+      "mob": "redCloth",
+      "boss": "lightGuidingTetrahedron"
+    },
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "admonition",
+            "mob": "redCloth",
+            "bigBoss": "tearsOfTheCalamitousGod",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nilou",
+    "name": "Nilou",
+    "ascensionMaterials": {
+      "gem": "hydroGem",
+      "natural": "padisarah",
+      "mob": "fungalSporePowder",
+      "boss": "perpetualCaliber"
+    },
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "praxis",
+            "mob": "fungalSporePowder",
+            "bigBoss": "tearsOfTheCalamitousGod",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
   }
 ]

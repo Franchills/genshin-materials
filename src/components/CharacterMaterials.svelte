@@ -171,7 +171,7 @@
 	<character-header>
 		<button on:click={() => moveCharacter('up')}>Move Up</button>
 		<button on:click={() => moveCharacter('down')}>Move Down</button>
-		<button on:click={() => removeCharacter()}>Delete</button>
+		<button class="danger" on:click={() => removeCharacter()}>Delete</button>
 		<CharacterOptionSelect
 			on:updateValue={updateValue}
 			selectTitle="Normal Attack"
@@ -283,9 +283,9 @@
 								/>
 
 								{#if material.qt < 0}
-									<bold>{material.qt}</bold>
+									<value class="bold">{material.qt}</value>
 								{:else}
-									{material.qt}
+									<value>{material.qt}</value>
 								{/if}
 							</material>
 						{/each}
@@ -346,6 +346,12 @@
 		border-radius: 3px;
 	}
 
+	character-header button.danger {
+		background-color: crimson;
+		color: #fff;
+		border: none;
+	}
+
 	character-body {
 		display: flex;
 		flex-direction: row;
@@ -371,15 +377,18 @@
 		align-items: center;
 		border: 1px solid #ddd;
 		width: 100%;
+		/* padding: 0 .5rem; */
 	}
 
 	grid-section material img {
-		margin-right: 0.25rem;
-		width: 3rem;
 		height: 3rem;
 	}
 
-	grid-section material bold {
+	grid-section material value {
+		margin-right: 1rem;
+	}
+
+	grid-section material value.bold {
 		font-variation-settings: 'wght' 800;
 	}
 

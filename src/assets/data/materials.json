@@ -197,6 +197,18 @@
       "amount": [
         0
       ]
+    },
+    {
+      "name": "lightGuidingTetrahedron",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "perpetualCaliber",
+      "amount": [
+        0
+      ]
     }
   ],
   "bigBoss": [
@@ -548,6 +560,24 @@
     },
     {
       "name": "kalpalataLotus",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "padisarah",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "scarab",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "redcrest",
       "amount": [
         0
       ]
