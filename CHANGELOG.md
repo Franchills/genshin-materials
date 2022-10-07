@@ -1,5 +1,10 @@
 # Changelog
-
+## [3.1.1] - 2022-10-08
+### Bugfixes
+  - Fixed Kuki Shinobu boss materials.
+## [3.1.0] - 2022-09-26
+### Additions
+  - Added new character Cyno, Candance and Nilou.
 ## [3.0.9] - 2022-09-09
 ### Additions
   - Added new character Dori.
