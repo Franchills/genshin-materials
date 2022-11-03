@@ -209,6 +209,12 @@
       "amount": [
         0
       ]
+    },
+    {
+      "name": "quelledCreeper",
+      "amount": [
+        0
+      ]
     }
   ],
   "bigBoss": [
@@ -316,6 +322,24 @@
     },
     {
       "name": "tuskOfMonocerosCaeli",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "puppetStrings",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "dakasBell",
+      "amount": [
+        0
+      ]
+    },
+    {
+      "name": "mirrorOfMushin",
       "amount": [
         0
       ]
@@ -577,7 +601,7 @@
       ]
     },
     {
-      "name": "redcrest",
+      "name": "hennaBerry",
       "amount": [
         0
       ]

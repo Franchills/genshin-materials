@@ -28,6 +28,9 @@ export default [
 	'mudraOfTheMaleficGeneral',
 	'tearsOfTheCalamitousGod',
 	'theMeaningOfAeons',
+	'puppetStrings',
+	'dakasBell',
+	'mirrorOfMushin',
 	'hurricaneSeed',
 	'lightningPrism',
 	'basaltPillar',
@@ -48,6 +51,7 @@ export default [
 	'thunderclapFruitcore',
 	'lightGuidingTetrahedron',
 	'perpetualCaliber',
+	'quelledCreeper',
 	'diamondGem',
 	'pyroGem',
 	'hydroGem',
@@ -99,5 +103,5 @@ export default [
 	'kalpalataLotus',
 	'padisarah',
 	'scarab',
-	'redcrest'
+	'hennaBerry'
 ]

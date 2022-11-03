@@ -1,4 +1,7 @@
 # Changelog
+## [3.2.0] - 2022-11-03
+### Additions
+  - Added new character Nahida.
 ## [3.1.1] - 2022-10-08
 ### Bugfixes
   - Fixed Kuki Shinobu boss materials.

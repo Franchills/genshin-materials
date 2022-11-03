@@ -1753,7 +1753,7 @@
     "name": "Candace",
     "ascensionMaterials": {
       "gem": "hydroGem",
-      "natural": "redcrest",
+      "natural": "hennaBerry",
       "mob": "redCloth",
       "boss": "lightGuidingTetrahedron"
     },
@@ -1796,6 +1796,33 @@
             "talentBook": "praxis",
             "mob": "fungalSporePowder",
             "bigBoss": "tearsOfTheCalamitousGod",
+            "crown": "crownOfInsight"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nahida",
+    "name": "Nahida",
+    "ascensionMaterials": {
+      "gem": "dendroGem",
+      "natural": "kalpalataLotus",
+      "mob": "fungalSporePowder",
+      "boss": "quelledCreeper"
+    },
+    "talentMaterials": [
+      {
+        "type": [
+          "normalAttack",
+          "skill",
+          "burst"
+        ],
+        "materials": [
+          {
+            "talentBook": "ingenuity",
+            "mob": "fungalSporePowder",
+            "bigBoss": "puppetStrings",
             "crown": "crownOfInsight"
           }
         ]
